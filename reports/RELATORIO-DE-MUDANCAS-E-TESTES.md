@@ -60,4 +60,13 @@ As capturas e o relatório estruturado estão em `previews/`, pasta excluída da
 
 ## Publicação
 
-Este rascunho está na branch local `tech-redesign-draft`. Nenhum `push` ou alteração no GitHub Pages será realizado sem nova confirmação explícita de Anderson.
+Publicação autorizada por Anderson e realizada em 15 de setembro de 2026.
+
+- repositório: `andersonjonio-inova/fofo-tech-dia-1`;
+- branch e origem do Pages: `main` e raiz `/`;
+- commit da implementação: `9933b91`;
+- portal: `https://andersonjonio-inova.github.io/fofo-tech-dia-1/`;
+- página do Dia 1: `https://andersonjonio-inova.github.io/fofo-tech-dia-1/dia-1/`;
+- apresentação: `https://andersonjonio-inova.github.io/fofo-tech-dia-1/encontro-1/`.
+
+Após a implantação, as três rotas, folhas de estilo, scripts, imagem conceitual, diagramas, Reveal.js e Lucide responderam com HTTP 200. As assinaturas da versão nova foram confirmadas no conteúdo público com cache isolado.
