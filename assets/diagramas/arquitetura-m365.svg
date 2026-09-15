@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 720" role="img" aria-labelledby="title desc">
+  <title id="title">Arquitetura pedagógica dos recursos Microsoft 365 no Dia 1</title>
+  <desc id="desc">O problema formativo orienta ações de interação, diagnóstico, apresentação, síntese e coautoria, apoiadas por Teams, Forms, PowerPoint Live, Whiteboard e Loop, gerando evidências para feedback.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0l10 5-10 5z" fill="#67dcff"/></marker><style>.bg{fill:#071426}.link{fill:none;stroke:#67dcff;stroke-width:3;marker-end:url(#arrow)}.box{fill:#0e243f;stroke:#31577d;stroke-width:2}.action{fill:#152f51;stroke:#67dcff}.evidence{fill:#3b194c;stroke:#ff5cc8}.tag{fill:#67dcff;font:700 15px ui-monospace,monospace}.title{fill:#fff;font:750 24px system-ui,sans-serif}.sub{fill:#b6cadf;font:450 16px system-ui,sans-serif}</style></defs>
+  <rect class="bg" width="1320" height="720" rx="34"/>
+  <g transform="translate(55 255)"><rect class="box" width="245" height="190" rx="26"/><text class="tag" x="28" y="38">PONTO DE PARTIDA</text><text class="title" x="28" y="82">Problema</text><text class="title" x="28" y="112">formativo</text><text class="sub" x="28" y="150">o que precisa mudar</text><text class="sub" x="28" y="174">na prática profissional?</text></g>
+  <path class="link" d="M300 350H390M650 130H720M650 250H720M650 370H720M650 490H720M650 610H720M1010 370h105"/>
+  <path class="link" d="M390 350V130H445M390 350V250H445M390 350H445M390 350V490H445M390 350V610H445"/>
+  <g transform="translate(445 80)"><rect class="action" width="205" height="100" rx="22"/><text class="tag" x="22" y="32">INTERAGIR</text><text class="title" x="22" y="67">Teams</text></g>
+  <g transform="translate(445 200)"><rect class="action" width="205" height="100" rx="22"/><text class="tag" x="22" y="32">DIAGNOSTICAR</text><text class="title" x="22" y="67">Forms</text></g>
+  <g transform="translate(445 320)"><rect class="action" width="205" height="100" rx="22"/><text class="tag" x="22" y="32">APRESENTAR</text><text class="title" x="22" y="67">PPT Live</text></g>
+  <g transform="translate(445 440)"><rect class="action" width="205" height="100" rx="22"/><text class="tag" x="22" y="32">SINTETIZAR</text><text class="title" x="22" y="67">Whiteboard</text></g>
+  <g transform="translate(445 560)"><rect class="action" width="205" height="100" rx="22"/><text class="tag" x="22" y="32">COCRIAR</text><text class="title" x="22" y="67">Loop</text></g>
+  <g transform="translate(720 80)"><rect class="box" width="290" height="100" rx="22"/><text class="title" x="24" y="43">Discussão estruturada</text><text class="sub" x="24" y="72">publicação e canal</text></g>
+  <g transform="translate(720 200)"><rect class="box" width="290" height="100" rx="22"/><text class="title" x="24" y="43">Padrões de resposta</text><text class="sub" x="24" y="72">decisão e justificativa</text></g>
+  <g transform="translate(720 320)"><rect class="box" width="290" height="100" rx="22"/><text class="title" x="24" y="43">Aporte dialogado</text><text class="sub" x="24" y="72">antecipação e aplicação</text></g>
+  <g transform="translate(720 440)"><rect class="box" width="290" height="100" rx="22"/><text class="title" x="24" y="43">Mapa de raciocínio</text><text class="sub" x="24" y="72">padrões e prioridades</text></g>
+  <g transform="translate(720 560)"><rect class="box" width="290" height="100" rx="22"/><text class="title" x="24" y="43">Canvas revisável</text><text class="sub" x="24" y="72">autoria e nova versão</text></g>
+  <g transform="translate(1115 255)"><rect class="evidence" width="150" height="230" rx="28"/><text class="tag" x="75" y="42" text-anchor="middle">RESULTADO</text><text class="title" x="75" y="90" text-anchor="middle">Evidência</text><text class="sub" x="75" y="128" text-anchor="middle">critério</text><text class="sub" x="75" y="154" text-anchor="middle">feedback</text><text class="sub" x="75" y="180" text-anchor="middle">revisão</text></g>
+</svg>

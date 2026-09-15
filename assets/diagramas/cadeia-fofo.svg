@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 620" role="img" aria-labelledby="title desc">
+  <title id="title">Cadeia pedagógica FOFO TECH</title>
+  <desc id="desc">Percurso que parte da realidade profissional, passa por capacidade, objetivos, conteúdos, experiência, evidência, critérios, feedback, avaliação e retorna ao trabalho.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0l10 5-10 5z" fill="#64d9ff"/></marker>
+    <style>
+      .bg{fill:#071426}.line{fill:none;stroke:#64d9ff;stroke-width:3;marker-end:url(#arrow)}.box{fill:#0d223d;stroke:#31577d;stroke-width:2}.hot{fill:#123d63;stroke:#64d9ff}.final{fill:#39194c;stroke:#ff5cc8}.n{fill:#64d9ff;font:700 17px ui-monospace,monospace}.label{fill:#f3f7ff;font:700 21px system-ui,sans-serif}.sub{fill:#a9bdd2;font:400 15px system-ui,sans-serif}.legend{fill:#dbe8f5;font:500 17px system-ui,sans-serif}
+    </style>
+  </defs>
+  <rect class="bg" width="1440" height="620" rx="34"/>
+  <path class="line" d="M210 165H310M540 165H640M870 165H970M1200 165h75v145h-75M970 455H870M640 455H540M310 455H210M105 390V230"/>
+  <g transform="translate(55 100)"><rect class="box hot" width="155" height="130" rx="22"/><text class="n" x="22" y="34">01</text><text class="label" x="22" y="68">Realidade</text><text class="sub" x="22" y="95">necessidade</text><text class="sub" x="22" y="116">profissional</text></g>
+  <g transform="translate(310 100)"><rect class="box" width="230" height="130" rx="22"/><text class="n" x="22" y="34">02</text><text class="label" x="22" y="68">Capacidade</text><text class="sub" x="22" y="98">desempenho esperado</text></g>
+  <g transform="translate(640 100)"><rect class="box" width="230" height="130" rx="22"/><text class="n" x="22" y="34">03</text><text class="label" x="22" y="68">Objetivos</text><text class="sub" x="22" y="98">ação observável</text></g>
+  <g transform="translate(970 100)"><rect class="box" width="230" height="130" rx="22"/><text class="n" x="22" y="34">04</text><text class="label" x="22" y="68">Conteúdos</text><text class="sub" x="22" y="98">o necessário para agir</text></g>
+  <g transform="translate(1045 390)"><rect class="box" width="230" height="130" rx="22"/><text class="n" x="22" y="34">05</text><text class="label" x="22" y="68">Experiência</text><text class="sub" x="22" y="98">problema e produção</text></g>
+  <g transform="translate(640 390)"><rect class="box" width="230" height="130" rx="22"/><text class="n" x="22" y="34">06</text><text class="label" x="22" y="68">Evidência</text><text class="sub" x="22" y="98">produto observável</text></g>
+  <g transform="translate(310 390)"><rect class="box" width="230" height="130" rx="22"/><text class="n" x="22" y="34">07</text><text class="label" x="22" y="68">Critérios</text><text class="sub" x="22" y="98">qualidade explicitada</text></g>
+  <g transform="translate(55 390)"><rect class="box" width="155" height="130" rx="22"/><text class="n" x="22" y="34">08</text><text class="label" x="22" y="68">Feedback</text><text class="sub" x="22" y="95">revisão e</text><text class="sub" x="22" y="116">avaliação</text></g>
+  <g transform="translate(475 266)"><rect class="final" width="490" height="92" rx="46"/><text class="label" x="245" y="42" text-anchor="middle">Transferência para o trabalho</text><text class="sub" x="245" y="68" text-anchor="middle">a prática é ponto de partida e de chegada</text></g>
+  <text class="legend" x="720" y="579" text-anchor="middle">A tecnologia entra depois da decisão pedagógica e deve ampliar ação, evidência ou feedback.</text>
+</svg>

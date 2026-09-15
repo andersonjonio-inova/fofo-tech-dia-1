@@ -3,75 +3,62 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portal do curso FOFO TECH: apresentações e materiais para aprendizagem mediada por tecnologias.">
-  <meta name="theme-color" content="#0e2f66">
+  <meta name="description" content="Portal do curso FOFO TECH: encontros, apresentações, atividades e recursos para aprendizagem mediada por tecnologias.">
+  <meta name="theme-color" content="#071426">
   <title>FOFO TECH | Portal do curso</title>
   <link rel="icon" href="./assets/logo-cjud.jpg">
   <link rel="stylesheet" href="./assets/portal.css">
+  <script src="./vendor/lucide/lucide.min.js" defer></script>
   <script src="./assets/portal.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
-  <header class="hero">
-    <nav class="topbar" aria-label="Navegação principal">
-      <a class="brand" href="./" aria-label="FOFO TECH, página inicial">
-        <img src="./assets/logo-cjud.jpg" alt="Logo do CJUD">
-        <span><strong>FOFO TECH</strong><small>Portal do curso</small></span>
-      </a>
-      <a class="top-link" href="#encontros">Apresentações</a>
-    </nav>
-    <div class="hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow">Formação presencial em laboratório</p>
-        <h1>Tecnologia com <span>intencionalidade pedagógica</span></h1>
-        <p class="hero-lead">Um percurso para conectar domínio técnico, metodologias ativas, mediação, evidências e transferência para a prática.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="./encontro-1/">Abrir apresentação do Dia 1</a>
-          <a class="button secondary" href="#orientacoes">Como utilizar</a>
-        </div>
-      </div>
-      <div class="tech-visual" aria-hidden="true">
-        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
-        <div class="core"><span>FOFO</span><strong>TECH</strong></div>
-        <span class="node n1"></span><span class="node n2"></span><span class="node n3"></span><span class="node n4"></span>
-      </div>
-    </div>
+  <header class="site-header" data-sticky-header>
+    <a class="brand" href="./" aria-label="FOFO TECH, início"><img src="./assets/logo-cjud.jpg" alt="Logo do CJUD"><span><strong>FOFO TECH</strong><small>Portal do curso</small></span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><i data-lucide="menu" aria-hidden="true"></i><span class="sr-only">Abrir menu</span></button>
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal"><a href="#visao-geral">Visão geral</a><a href="#encontros">Encontros</a><a href="#recursos">Recursos</a><a href="#orientacoes">Como usar</a></nav>
   </header>
   <main id="conteudo">
-    <section class="section" id="encontros" aria-labelledby="titulo-encontros">
-      <div class="section-head">
-        <div><p class="eyebrow dark">Apresentações</p><h2 id="titulo-encontros">Encontros do curso</h2></div>
-        <p>Conteúdo organizado por encontro, com acesso direto ao modo de apresentação.</p>
-      </div>
-      <article class="meeting-card active-card">
-        <div class="meeting-number" aria-hidden="true">01</div>
-        <div class="meeting-content">
-          <div class="status"><span></span> Disponível</div>
-          <h3>Aprendizagem mediada e Microsoft Teams</h3>
-          <p>Diagnóstico, fundamentos, critérios de escolha tecnológica, laboratórios técnico-pedagógicos e desafio integrador.</p>
-          <ul class="chips" aria-label="Temas do encontro"><li>36 slides</li><li>Teams</li><li>Metodologias ativas</li><li>Avaliação formativa</li></ul>
-        </div>
-        <a class="meeting-link" href="./encontro-1/" aria-label="Abrir apresentação do Dia 1">Abrir <span aria-hidden="true">→</span></a>
-      </article>
-      <div class="future-card" aria-label="Próximos conteúdos em preparação">
-        <span>Próximos encontros</span>
-        <p>Novas apresentações e materiais serão incorporados à medida que o plano do curso for consolidado.</p>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true"></div><div class="hero-grid pattern-grid"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">Formação de formadores • TJRS</p>
+        <h1 id="hero-title">Tecnologia com <span>intencionalidade pedagógica</span></h1>
+        <p class="hero-lead">Um ambiente para organizar encontros, experiências de aprendizagem, evidências e recursos tecnológicos. A prática profissional é o ponto de partida e de chegada.</p>
+        <div class="hero-actions"><a class="button button-primary" href="./dia-1/"><i data-lucide="route" aria-hidden="true"></i>Explorar o Dia 1</a><a class="button button-ghost" href="./encontro-1/"><i data-lucide="presentation" aria-hidden="true"></i>Abrir apresentação</a></div>
+        <ul class="hero-facts" aria-label="Características do curso"><li><span>01</span> problema antes da ferramenta</li><li><span>02</span> prática, evidência e feedback</li><li><span>03</span> transferência para o trabalho</li></ul>
       </div>
     </section>
-    <section class="section guide" id="orientacoes" aria-labelledby="titulo-orientacoes">
-      <div class="section-head"><div><p class="eyebrow dark">Orientações</p><h2 id="titulo-orientacoes">Como apresentar</h2></div></div>
-      <div class="guide-grid">
-        <article><span>01</span><h3>Navegue</h3><p>Use as setas, espaço, Page Up e Page Down. Em telas móveis, deslize horizontalmente.</p></article>
-        <article><span>02</span><h3>Projete</h3><p>Ative a tela cheia pelo controle inferior ou pela tecla F.</p></article>
-        <article><span>03</span><h3>Facilite</h3><p>Use N para notas e T para iniciar ou pausar o temporizador das atividades.</p></article>
-        <article><span>04</span><h3>Adapte</h3><p>O conteúdo essencial funciona sem serviços externos. Prepare contingências para os laboratórios Microsoft 365.</p></article>
+    <section class="section" id="visao-geral" aria-labelledby="overview-title"><div class="container">
+      <div class="section-heading"><div><p class="eyebrow">Visão geral</p><h2 id="overview-title">Da realidade à transformação da prática</h2></div><p>O portal concentra a camada detalhada do curso. Os slides apoiam a mediação em sala e permanecem enxutos.</p></div>
+      <div class="principles-grid">
+        <article class="glass-card"><i data-lucide="briefcase-business" aria-hidden="true"></i><h3>Prática profissional</h3><p>Problemas autênticos orientam capacidades, objetivos e decisões.</p></article>
+        <article class="glass-card"><i data-lucide="scan-search" aria-hidden="true"></i><h3>Evidência observável</h3><p>A aprendizagem aparece em decisões, produtos, argumentos e revisões.</p></article>
+        <article class="glass-card"><i data-lucide="messages-square" aria-hidden="true"></i><h3>Mediação intencional</h3><p>O formador diagnostica, problematiza, acompanha, devolve e sistematiza.</p></article>
+        <article class="glass-card"><i data-lucide="repeat-2" aria-hidden="true"></i><h3>Transferência</h3><p>Cada experiência termina com um próximo passo aplicável ao trabalho.</p></article>
       </div>
-    </section>
+      <figure class="diagram-card media-zoom" data-lightbox-src="./assets/diagramas/cadeia-fofo.svg" data-lightbox-alt="Cadeia pedagógica FOFO TECH, da realidade profissional à transferência para o trabalho"><img src="./assets/diagramas/cadeia-fofo.svg" alt="Cadeia pedagógica FOFO TECH, da realidade profissional à transferência para o trabalho"><figcaption><span>Cadeia pedagógica FOFO TECH</span><button type="button" class="text-button"><i data-lucide="maximize-2" aria-hidden="true"></i>Ampliar diagrama</button></figcaption></figure>
+    </div></section>
+    <section class="section section-dark" id="encontros" aria-labelledby="meetings-title"><div class="container">
+      <div class="section-heading"><div><p class="eyebrow">Percurso do curso</p><h2 id="meetings-title">Encontros organizados por dia</h2></div><p>Somente conteúdos validados aparecem como disponíveis. Os próximos dias permanecem sinalizados sem conteúdo inventado.</p></div>
+      <div class="day-grid">
+        <article class="day-card day-available"><div class="day-top"><span class="day-number">01</span><span class="status status-ready"><i data-lucide="circle-check" aria-hidden="true"></i>Disponível</span></div><p class="day-label">Dia 1</p><h3>Aprendizagem mediada e Microsoft Teams</h3><p>Diagnóstico, lentes sobre aprendizagem, decisão tecnológica e seis laboratórios técnico-pedagógicos.</p><ul class="tag-list" aria-label="Temas do Dia 1"><li>Teams</li><li>Forms</li><li>Whiteboard</li><li>Loop</li></ul><div class="card-actions"><a class="button button-primary" href="./dia-1/"><i data-lucide="layout-dashboard" aria-hidden="true"></i>Ver o dia</a><a class="button button-link" href="./encontro-1/"><i data-lucide="presentation" aria-hidden="true"></i>Slides</a></div></article>
+        <article class="day-card day-pending" aria-label="Próximos encontros em preparação"><div class="day-top"><span class="day-number">+</span><span class="status"><i data-lucide="construction" aria-hidden="true"></i>Em preparação</span></div><p class="day-label">Próximos dias</p><h3>Conteúdo a consolidar</h3><p>Novos encontros serão incorporados quando tema, objetivos, atividades e evidências estiverem definidos e validados.</p><p class="pending-note"><i data-lucide="shield-check" aria-hidden="true"></i>Nenhum objetivo, ferramenta ou material foi presumido.</p></article>
+      </div>
+    </div></section>
+    <section class="section" id="recursos" aria-labelledby="resources-title"><div class="container">
+      <div class="section-heading"><div><p class="eyebrow">Recursos tecnológicos</p><h2 id="resources-title">Escolhidos pela função pedagógica</h2></div><p>O recurso só entra quando amplia uma ação relevante, torna uma evidência visível ou melhora o feedback.</p></div>
+      <div class="resource-preview">
+        <figure class="diagram-card media-zoom" data-lightbox-src="./assets/diagramas/arquitetura-m365.svg" data-lightbox-alt="Arquitetura pedagógica dos recursos Microsoft 365 usados no Dia 1"><img src="./assets/diagramas/arquitetura-m365.svg" alt="Arquitetura pedagógica dos recursos Microsoft 365 usados no Dia 1"><figcaption><span>Arquitetura pedagógica dos recursos do Dia 1</span><button type="button" class="text-button"><i data-lucide="maximize-2" aria-hidden="true"></i>Ampliar</button></figcaption></figure>
+        <div class="resource-summary"><span class="mono-label">REGRA DE DECISÃO</span><blockquote>Usar tecnologia quando o ganho pedagógico superar a carga, o risco e a complexidade.</blockquote><a class="button button-dark" href="./dia-1/#recursos"><i data-lucide="boxes" aria-hidden="true"></i>Ver fichas dos recursos</a></div>
+      </div>
+    </div></section>
+    <section class="section section-accent" id="orientacoes" aria-labelledby="guide-title"><div class="container">
+      <div class="section-heading"><div><p class="eyebrow">Orientações</p><h2 id="guide-title">Como usar este ambiente</h2></div></div>
+      <div class="guide-grid"><article><span class="step-index">01</span><i data-lucide="map" aria-hidden="true"></i><h3>Entre pelo portal</h3><p>Escolha o dia e acesse a camada pedagógica antes da apresentação.</p></article><article><span class="step-index">02</span><i data-lucide="presentation" aria-hidden="true"></i><h3>Apresente</h3><p>Use setas, espaço, swipe, visão geral, notas e tela cheia.</p></article><article><span class="step-index">03</span><i data-lucide="timer" aria-hidden="true"></i><h3>Facilite</h3><p>O temporizador apoia as atividades e pode ser destacado em uma janela própria.</p></article><article><span class="step-index">04</span><i data-lucide="unplug" aria-hidden="true"></i><h3>Prepare contingências</h3><p>Preserve o objetivo mesmo quando licença, rede ou ferramenta falhar.</p></article></div>
+    </div></section>
   </main>
-  <footer>
-    <img src="./assets/logo-cjud.jpg" alt="">
-    <p><strong>FOFO TECH</strong><br>Da ferramenta à aprendizagem.</p>
-    <p class="footer-note">Site estático preparado para GitHub Pages.</p>
-  </footer>
+  <footer class="site-footer"><div class="container footer-grid"><div class="brand"><img src="./assets/logo-cjud.jpg" alt=""><span><strong>FOFO TECH</strong><small>Da ferramenta à aprendizagem</small></span></div><p>Portal estático, sem rastreamento e preparado para GitHub Pages.</p><a href="#conteudo">Voltar ao topo <i data-lucide="arrow-up" aria-hidden="true"></i></a></div></footer>
+  <dialog class="lightbox" aria-labelledby="lightbox-caption"><button class="lightbox-close" type="button" aria-label="Fechar imagem"><i data-lucide="x" aria-hidden="true"></i></button><div class="lightbox-stage"><img alt=""><p id="lightbox-caption"></p></div></dialog>
 </body>
 </html>

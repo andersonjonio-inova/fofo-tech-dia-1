@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 740" role="img" aria-labelledby="title desc">
+  <title id="title">Microciclo dos laboratórios FOFO TECH</title>
+  <desc id="desc">Ciclo de dez passos: problema, hipóteses, demonstração, prática guiada, desafio, evidência, feedback, revisão, debriefing e transferência.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0l10 5-10 5z" fill="#66dcff"/></marker>
+    <style>.bg{fill:#071426}.ring{fill:none;stroke:#31577d;stroke-width:2;stroke-dasharray:8 12}.link{fill:none;stroke:#66dcff;stroke-width:3;marker-end:url(#arrow)}.node{fill:#0e243f;stroke:#31577d;stroke-width:2}.hot{fill:#3c194d;stroke:#ff5cc8}.n{fill:#66dcff;font:700 16px ui-monospace,monospace}.t{fill:#f4f8ff;font:700 18px system-ui,sans-serif}.core{fill:#102f50;stroke:#66dcff;stroke-width:2}.coret{fill:#fff;font:750 27px system-ui,sans-serif}.cores{fill:#b6cce0;font:500 16px system-ui,sans-serif}</style>
+  </defs>
+  <rect class="bg" width="1200" height="740" rx="34"/>
+  <circle class="ring" cx="600" cy="370" r="270"/>
+  <path class="link" d="M600 95A275 275 0 0 1 762 147M808 171A275 275 0 0 1 875 321M883 376A275 275 0 0 1 817 538M780 579A275 275 0 0 1 625 645M574 645A275 275 0 0 1 420 579M381 540A275 275 0 0 1 316 382M316 326A275 275 0 0 1 385 170M431 145A275 275 0 0 1 574 95"/>
+  <g transform="translate(510 47)"><rect class="node" width="180" height="92" rx="20"/><text class="n" x="20" y="30">01</text><text class="t" x="20" y="61">Problema</text></g>
+  <g transform="translate(742 105)"><rect class="node" width="180" height="92" rx="20"/><text class="n" x="20" y="30">02</text><text class="t" x="20" y="61">Hipóteses</text></g>
+  <g transform="translate(865 260)"><rect class="node" width="220" height="92" rx="20"/><text class="n" x="20" y="30">03</text><text class="t" x="20" y="61">Demonstração</text></g>
+  <g transform="translate(860 445)"><rect class="node" width="220" height="92" rx="20"/><text class="n" x="20" y="30">04</text><text class="t" x="20" y="61">Prática guiada</text></g>
+  <g transform="translate(700 595)"><rect class="node" width="180" height="92" rx="20"/><text class="n" x="20" y="30">05</text><text class="t" x="20" y="61">Desafio</text></g>
+  <g transform="translate(320 595)"><rect class="node" width="180" height="92" rx="20"/><text class="n" x="20" y="30">06</text><text class="t" x="20" y="61">Evidência</text></g>
+  <g transform="translate(120 445)"><rect class="node" width="220" height="92" rx="20"/><text class="n" x="20" y="30">07</text><text class="t" x="20" y="61">Feedback</text></g>
+  <g transform="translate(115 260)"><rect class="node" width="220" height="92" rx="20"/><text class="n" x="20" y="30">08</text><text class="t" x="20" y="61">Revisão</text></g>
+  <g transform="translate(278 105)"><rect class="node" width="180" height="92" rx="20"/><text class="n" x="20" y="30">09</text><text class="t" x="20" y="61">Debriefing</text></g>
+  <g transform="translate(425 295)"><rect class="hot" width="350" height="150" rx="30"/><text class="n" x="175" y="42" text-anchor="middle">10</text><text class="coret" x="175" y="82" text-anchor="middle">Transferência</text><text class="cores" x="175" y="112" text-anchor="middle">quando e como aplicar no trabalho</text></g>
+</svg>
