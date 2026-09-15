@@ -1,0 +1,62 @@
+{
+  "Global_Settings": {
+    "Aspect_Ratio": "16:9",
+    "Design_Style": ["sofisticado", "institucional", "tech", "minimalista", "projetor"],
+    "Color_Scheme": {
+      "Primary": "#17488F",
+      "Deep_Blue": "#0E2F66",
+      "Technology_Accent": "#12A7C7",
+      "Secondary_Green": "#76B82A",
+      "Secondary_Orange": "#F39A24",
+      "Highlight_Yellow": "#FFD21D",
+      "Background": "#FFFFFF",
+      "Text": "#15243A"
+    },
+    "Typography": {
+      "Family": "Aptos, Segoe UI Variable Display, Segoe UI, Arial, sans-serif",
+      "Title": "42–100 px responsivos",
+      "Body": "16–29 px responsivos",
+      "Projection_Rule": "alto contraste, pouco texto por bloco e leitura a distância"
+    },
+    "Interaction": ["menu lateral gerado por data-topic", "setas e teclado", "gesto horizontal no celular", "tela cheia", "notas do apresentador", "temporizador configurável", "temporizador destacável", "hash #N por número do slide"],
+    "Accessibility": ["foco visível", "rótulos ARIA", "movimento reduzido", "rolagem móvel", "contraste sem dependência exclusiva de cor"]
+  },
+  "Slides": [
+    {"Page":"01","Type":"Cover","Topic":"Abertura","Title":"FOFO TECH: Aprendizagem mediada por tecnologias"},
+    {"Page":"02","Type":"Instructor","Topic":"Abertura","Title":"Fernando de Assis Alves"},
+    {"Page":"03","Type":"Instructor","Topic":"Abertura","Title":"Ânderson Porto"},
+    {"Page":"04","Type":"Body","Topic":"Abertura","Title":"Nosso pacto de aprendizagem"},
+    {"Page":"05","Type":"Agenda","Topic":"Abertura","Title":"Percurso do Dia 1"},
+    {"Page":"06","Type":"Outcome","Topic":"Abertura","Title":"Resultado do Dia 1"},
+    {"Page":"07","Type":"Activity","Topic":"Diagnóstico","Title":"Diagnóstico: ponto de partida"},
+    {"Page":"08","Type":"Activity","Topic":"Diagnóstico","Title":"Pergunta geradora"},
+    {"Page":"09","Type":"Process","Topic":"Diagnóstico","Title":"Leitura do diagnóstico"},
+    {"Page":"10","Type":"Statement","Topic":"Aprendizagem mediada","Title":"Tecnologia modifica a aprendizagem"},
+    {"Page":"11","Type":"Grid","Topic":"Aprendizagem mediada","Title":"O que se transforma"},
+    {"Page":"12","Type":"ActivityDiagram","Topic":"Aprendizagem mediada","Title":"Mapa da aprendizagem mediada"},
+    {"Page":"13","Type":"Table","Topic":"Aprendizagem mediada","Title":"Potência e risco"},
+    {"Page":"14","Type":"Grid","Topic":"Lentes teóricas","Title":"Lentes sobre aprendizagem"},
+    {"Page":"15","Type":"ActivityProcess","Topic":"Lentes teóricas","Title":"Jigsaw de lentes"},
+    {"Page":"16","Type":"Table","Topic":"Lentes teóricas","Title":"Matriz das lentes"},
+    {"Page":"17","Type":"Activity","Topic":"Lentes teóricas","Title":"Controvérsia sobre conectivismo"},
+    {"Page":"18","Type":"Statement","Topic":"Intencionalidade","Title":"Nunca a ferramenta pela ferramenta"},
+    {"Page":"19","Type":"Process","Topic":"Intencionalidade","Title":"Sequência de decisão"},
+    {"Page":"20","Type":"Grid","Topic":"Intencionalidade","Title":"Critérios de escolha"},
+    {"Page":"21","Type":"Process","Topic":"Laboratórios Teams","Title":"Microciclo dos laboratórios"},
+    {"Page":"22","Type":"Body","Topic":"Laboratórios Teams","Title":"Teams no laboratório presencial"},
+    {"Page":"23","Type":"ActivityLab","Topic":"Laboratórios Teams","Title":"Laboratório 1: equipes e canais"},
+    {"Page":"24","Type":"ActivityLab","Topic":"Laboratórios Teams","Title":"Laboratório 2: reuniões e PowerPoint Live"},
+    {"Page":"25","Type":"ActivityLab","Topic":"Laboratórios Teams","Title":"Laboratório 3: salas simultâneas"},
+    {"Page":"26","Type":"ActivityLab","Topic":"Laboratórios Teams","Title":"Laboratório 4: Forms e enquetes"},
+    {"Page":"27","Type":"ActivityLab","Topic":"Laboratórios Teams","Title":"Laboratório 5: Whiteboard"},
+    {"Page":"28","Type":"ActivityLab","Topic":"Laboratórios Teams","Title":"Laboratório 6: Loop"},
+    {"Page":"29","Type":"Checklist","Topic":"Laboratórios Teams","Title":"Governança e contingência"},
+    {"Page":"30","Type":"Activity","Topic":"Desafio integrador","Title":"Desafio integrador"},
+    {"Page":"31","Type":"Grid","Topic":"Desafio integrador","Title":"Canvas da microatividade"},
+    {"Page":"32","Type":"Table","Topic":"Desafio integrador","Title":"Rubrica de qualidade"},
+    {"Page":"33","Type":"Activity","Topic":"Desafio integrador","Title":"Feedback entre pares"},
+    {"Page":"34","Type":"Process","Topic":"Síntese","Title":"Síntese do percurso"},
+    {"Page":"35","Type":"Activity","Topic":"Síntese","Title":"Ticket de saída"},
+    {"Page":"36","Type":"BackCover","Topic":"Síntese","Title":"Tecnologia com intencionalidade pedagógica"}
+  ]
+}

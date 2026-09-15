@@ -1,0 +1,55 @@
+FOFO TECH · APRESENTAÇÃO DO DIA 1
+
+Abra o arquivo index.html no Chrome, Edge ou Firefox.
+
+CONTROLES
+• Setas, Page Up/Page Down ou espaço: navegar
+• Home / End: primeiro ou último slide
+• F: entrar ou sair da tela cheia
+• N: abrir ou fechar notas do apresentador
+• T: iniciar ou pausar o temporizador
+• R: reiniciar o temporizador
+• Clique em 00:00: escolher tempo ou destacar em outra janela
+• Em tela cheia, use o botão ☰ para acessar o menu lateral
+
+LINK DIRETO
+Use #N ao final do endereço para abrir um slide específico.
+Exemplo: index.html#23
+
+CELULAR E ACESSIBILIDADE
+• Deslize horizontalmente para avançar ou voltar, sem bloquear a rolagem vertical
+• Em telas menores, os slides permitem rolagem e os componentes viram uma coluna
+• O deck respeita a preferência do sistema por movimento reduzido
+• Todos os controles principais possuem rótulos para tecnologias assistivas
+
+OBSERVAÇÃO SOBRE TEMPOS
+O plano ainda não confirma a carga horária do Dia 1. Por isso, as atividades têm
+temporizador configurável, sem minutos fixados no conteúdo. A agenda usa percentuais.
+
+ESTRUTURA
+• index.html: apresentação completa, com CSS e JavaScript locais
+• assets/logo-cjud.jpg: identidade institucional
+• assets/instrutor-anderson.png: fotografia do instrutor
+• assets/instrutor-fernando.jpg: fotografia do instrutor
+• blueprint-dia-1.json: inventário dos 36 slides e componentes
+
+SUBSTITUIÇÃO DE IDENTIDADE E CONTEÚDO
+• Altere cores nas variáveis CSS do bloco :root
+• Preserve os nomes dos arquivos em assets/ ou atualize seus caminhos relativos
+• Edite textos dentro das sections .slide e notas em data-note
+• Para novas atividades, use class="activity" e data-duration
+
+COMPONENTES UTILIZADOS
+Capa, currículo, agenda, resultado, cards, fluxo, matriz, pergunta mobilizadora,
+mapa em SVG, laboratório, checklist, tags, notas, menu, progresso e timer.
+
+TESTES PREVISTOS
+Desktop 1920x1080 e 1366x768; celular; teclado; hash; tela cheia; menu;
+temporizador; notas; imagens; caminhos relativos; movimento reduzido e overflow.
+
+LACUNAS
+Não há vídeos, PDFs nem QR Codes ativos nesta versão. A carga horária oficial e
+os links das atividades Microsoft 365 ainda dependem de confirmação.
+
+VERSÃO
+0.2 · 15 de setembro de 2026
