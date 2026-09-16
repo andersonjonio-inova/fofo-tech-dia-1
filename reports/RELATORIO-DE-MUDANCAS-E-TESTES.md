@@ -70,6 +70,7 @@ A versão inicial foi publicada por autorização de Anderson em 15 de setembro 
 - commit da remoção dos antigos slides 5 a 9: `08d3b84`;
 - commit da inserção do diagnóstico no novo slide 5: `2c306b3`;
 - commit da inserção do momento de apresentação pessoal com QR do WhatsApp no slide 6: `bc905a0`;
+- commit da atualização do QR e reposicionamento da apresentação pessoal no slide 5: `0e59179`;
 - portal: `https://andersonjonio-inova.github.io/fofo-tech-dia-1/`;
 - página do Dia 1: `https://andersonjonio-inova.github.io/fofo-tech-dia-1/dia-1/`;
 - apresentação: `https://andersonjonio-inova.github.io/fofo-tech-dia-1/encontro-1/`.
