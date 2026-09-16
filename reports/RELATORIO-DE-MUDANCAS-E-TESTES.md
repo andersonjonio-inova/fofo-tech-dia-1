@@ -16,18 +16,18 @@
 
 ## Validação
 
-Validação concluída em 15 de setembro de 2026 com Chromium 151, servidor HTTP local e automação via CDP.
+Validação inicial concluída em 15 de setembro de 2026 e repetida após a revisão pedagógica de 16 de setembro de 2026, com Chromium 151, servidor HTTP local e automação via CDP.
 
 ### Itens aprovados
 
 - portal em 1920 × 1080, sem rolagem horizontal;
 - página do Dia 1 em 1366 × 768, sem conteúdo cortado;
-- apresentação Reveal.js com 36 slides, progresso, numeração e notas;
+- apresentação Reveal.js com 42 slides, progresso, numeração e notas;
 - navegação por controles e teclado, incluindo avanço de slide;
 - preservação dos links diretos por hash;
 - temporizador iniciado e reiniciado corretamente;
 - lightbox aberto por teclado e fechado pela tecla Esc;
-- seis cards de atividades e seis cards de recursos;
+- seis cards de atividades e sete cards de recursos;
 - links externos com `rel="noopener noreferrer"`;
 - imagens e SVGs sem deformação;
 - tablet em 820 × 1180, sem rolagem horizontal;
@@ -57,14 +57,16 @@ As capturas e o relatório estruturado estão em `previews/`, pasta excluída da
 - versão tablet;
 - versão móvel;
 - `validation.json`.
+- telas da problematização no Mentimeter, dos fundamentos Enfam e do funcionamento do Mentimeter.
 
 ## Publicação
 
-Publicação autorizada por Anderson e realizada em 15 de setembro de 2026.
+A versão inicial foi publicada por autorização de Anderson em 15 de setembro de 2026. A revisão de 16 de setembro, com o novo percurso pedagógico e o Mentimeter, teve publicação autorizada diretamente por Anderson no grupo FOFO TECH.
 
 - repositório: `andersonjonio-inova/fofo-tech-dia-1`;
 - branch e origem do Pages: `main` e raiz `/`;
-- commit da implementação: `9933b91`;
+- commit da implementação inicial: `9933b91`;
+- commit da revisão do Dia 1: `6b1b73d`;
 - portal: `https://andersonjonio-inova.github.io/fofo-tech-dia-1/`;
 - página do Dia 1: `https://andersonjonio-inova.github.io/fofo-tech-dia-1/dia-1/`;
 - apresentação: `https://andersonjonio-inova.github.io/fofo-tech-dia-1/encontro-1/`.
