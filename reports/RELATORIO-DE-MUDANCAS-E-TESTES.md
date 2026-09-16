@@ -22,7 +22,7 @@ Validação inicial concluída em 15 de setembro de 2026 e repetida após a revi
 
 - portal em 1920 × 1080, sem rolagem horizontal;
 - página do Dia 1 em 1366 × 768, sem conteúdo cortado;
-- apresentação Reveal.js com 39 slides, progresso, numeração e notas;
+- apresentação Reveal.js com 44 slides, progresso, numeração e notas;
 - navegação por controles e teclado, incluindo avanço de slide;
 - preservação dos links diretos por hash;
 - temporizador iniciado e reiniciado corretamente;
@@ -58,6 +58,11 @@ As capturas e o relatório estruturado estão em `previews/`, pasta excluída da
 - versão móvel;
 - `validation.json`.
 - telas da problematização no Mentimeter, dos fundamentos Enfam e do funcionamento do Mentimeter.
+- telas do conceito, das funcionalidades e do laboratório NotebookLM.
+
+### Ampliação com NotebookLM
+
+Em 16 de setembro de 2026, foram acrescentados cinco slides após o laboratório de Loop: conceito, arquitetura, funcionalidades, fluxo verificável e laboratório FOFO do NotebookLM. O bloco preserva a sequência técnico-pedagógica e desloca os slides posteriores sem alterar sua ordem relativa.
 
 ## Publicação
 

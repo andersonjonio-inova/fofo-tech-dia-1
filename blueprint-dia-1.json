@@ -53,13 +53,18 @@
     {"Page":"29","Type":"ActivityLab","Topic":"Laboratórios Teams","Title":"Laboratório 4: Forms e enquetes"},
     {"Page":"30","Type":"ActivityLab","Topic":"Laboratórios Teams","Title":"Laboratório 5: Whiteboard"},
     {"Page":"31","Type":"ActivityLab","Topic":"Laboratórios Teams","Title":"Laboratório 6: Loop"},
-    {"Page":"32","Type":"Checklist","Topic":"Laboratórios Teams","Title":"Governança e contingência"},
-    {"Page":"33","Type":"Activity","Topic":"Desafio integrador","Title":"Desafio integrador"},
-    {"Page":"34","Type":"Grid","Topic":"Desafio integrador","Title":"Canvas da microatividade"},
-    {"Page":"35","Type":"Table","Topic":"Desafio integrador","Title":"Rubrica de qualidade"},
-    {"Page":"36","Type":"Activity","Topic":"Desafio integrador","Title":"Feedback entre pares"},
-    {"Page":"37","Type":"Process","Topic":"Síntese","Title":"Síntese do percurso"},
-    {"Page":"38","Type":"Activity","Topic":"Síntese","Title":"Ticket de saída"},
-    {"Page":"39","Type":"BackCover","Topic":"Síntese","Title":"Fechamento"}
+    {"Page":"32","Type":"Grid","Topic":"Laboratórios Teams","Title":"NotebookLM: conceito"},
+    {"Page":"33","Type":"Process","Topic":"Laboratórios Teams","Title":"NotebookLM: arquitetura"},
+    {"Page":"34","Type":"Grid","Topic":"Laboratórios Teams","Title":"NotebookLM: funcionalidades"},
+    {"Page":"35","Type":"Process","Topic":"Laboratórios Teams","Title":"NotebookLM: fluxo verificável"},
+    {"Page":"36","Type":"ActivityLab","Topic":"Laboratórios Teams","Title":"Laboratório 7: NotebookLM"},
+    {"Page":"37","Type":"Checklist","Topic":"Laboratórios Teams","Title":"Governança e contingência"},
+    {"Page":"38","Type":"Activity","Topic":"Desafio integrador","Title":"Desafio integrador"},
+    {"Page":"39","Type":"Grid","Topic":"Desafio integrador","Title":"Canvas da microatividade"},
+    {"Page":"40","Type":"Table","Topic":"Desafio integrador","Title":"Rubrica de qualidade"},
+    {"Page":"41","Type":"Activity","Topic":"Desafio integrador","Title":"Feedback entre pares"},
+    {"Page":"42","Type":"Process","Topic":"Síntese","Title":"Síntese do percurso"},
+    {"Page":"43","Type":"Activity","Topic":"Síntese","Title":"Ticket de saída"},
+    {"Page":"44","Type":"BackCover","Topic":"Síntese","Title":"Fechamento"}
   ]
 }
