@@ -26,6 +26,7 @@
     center: false,
     touch: true,
     overview: true,
+    navigationMode: 'linear',
     transition: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'none' : 'fade',
     backgroundTransition: 'none',
     plugins: [RevealNotes]
@@ -37,6 +38,11 @@
   function updateTitle() {
     const slide = Reveal.getCurrentSlide();
     document.title = `${slide?.dataset.title || 'Dia 1'} · FOFO TECH`;
+    const status = document.querySelector('#slideStatus');
+    if (status) {
+      const indices = Reveal.getIndices();
+      status.textContent = `Slide ${indices.h + 1} de ${Reveal.getTotalSlides()}: ${slide?.dataset.title || 'Dia 1'}`;
+    }
   }
   Reveal.on('slidechanged', updateTitle);
 
@@ -48,6 +54,9 @@
   const timerMinutes = document.querySelector('#timerMinutes');
   const timerSeconds = document.querySelector('#timerSeconds');
   const notesOpen = document.querySelector('#notesOpen');
+  const prevSlide = document.querySelector('#prevSlide');
+  const nextSlide = document.querySelector('#nextSlide');
+  const fullscreenToggle = document.querySelector('#fullscreenToggle');
   let duration = 300;
   let remaining = duration;
   let running = false;
@@ -96,15 +105,64 @@
     timerSeconds.value = 0;
   }));
   notesOpen.addEventListener('click', () => Reveal.getPlugin('notes')?.open());
+  prevSlide.addEventListener('click', () => Reveal.prev());
+  nextSlide.addEventListener('click', () => Reveal.next());
+
+  const getFullscreenElement = () => document.fullscreenElement || document.webkitFullscreenElement;
+  const canFullscreen = Boolean(document.documentElement.requestFullscreen || document.documentElement.webkitRequestFullscreen);
+  function syncFullscreenButton() {
+    const active = Boolean(getFullscreenElement());
+    fullscreenToggle.textContent = active ? '⤡' : '⛶';
+    fullscreenToggle.setAttribute('aria-pressed', String(active));
+    fullscreenToggle.setAttribute('aria-label', active ? 'Sair da tela cheia' : 'Entrar em tela cheia');
+    fullscreenToggle.title = active ? 'Sair da tela cheia · tecla F ou Esc' : 'Tela cheia · tecla F';
+    requestAnimationFrame(() => Reveal.layout());
+  }
+  async function toggleFullscreen() {
+    if (!canFullscreen) return;
+    try {
+      if (getFullscreenElement()) {
+        const exit = document.exitFullscreen || document.webkitExitFullscreen;
+        await exit?.call(document);
+      } else {
+        const request = document.documentElement.requestFullscreen || document.documentElement.webkitRequestFullscreen;
+        await request?.call(document.documentElement);
+      }
+    } catch (error) {
+      console.warn('Não foi possível alternar a tela cheia.', error);
+    }
+  }
+  fullscreenToggle.addEventListener('click', toggleFullscreen);
+  fullscreenToggle.hidden = !canFullscreen;
+  document.addEventListener('fullscreenchange', syncFullscreenButton);
+  document.addEventListener('webkitfullscreenchange', syncFullscreenButton);
+  syncFullscreenButton();
 
   addEventListener('keydown', event => {
     if (timerDialog.open) return;
+    const interactive = event.target instanceof Element && event.target.closest('input, textarea, select, button, a, [contenteditable="true"]');
+    if (!interactive) {
+      const nextKeys = ['PageDown', 'ArrowRight', 'ArrowDown', ' ', 'Enter', 'MediaTrackNext'];
+      const prevKeys = ['PageUp', 'ArrowLeft', 'ArrowUp', 'Backspace', 'MediaTrackPrevious'];
+      if (nextKeys.includes(event.key)) {
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        Reveal.next();
+        return;
+      }
+      if (prevKeys.includes(event.key)) {
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        Reveal.prev();
+        return;
+      }
+    }
     if (event.key.toLowerCase() === 't') { event.preventDefault(); toggleTimer(); }
     if (event.key.toLowerCase() === 'r') { event.preventDefault(); resetTimer(); }
     if (event.key.toLowerCase() === 'n') { event.preventDefault(); Reveal.getPlugin('notes')?.open(); }
     if (event.key.toLowerCase() === 'f') {
       event.preventDefault();
-      document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen?.();
+      toggleFullscreen();
     }
   }, true);
   paint();

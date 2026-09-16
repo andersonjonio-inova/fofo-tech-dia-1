@@ -1,9 +1,10 @@
 # Recursos e links do Dia 1
 
-Links oficiais verificados em 15 de setembro de 2026.
+Links oficiais verificados em 16 de setembro de 2026.
 
 | Recurso | Função pedagógica | Evidência | Contingência | Fonte oficial |
 |---|---|---|---|---|
+| Mentimeter | Diagnóstico, problematização, priorização, síntese e perguntas ao vivo | Padrões, divergências, escolhas e dúvidas | Cartões, notas adesivas ou discussão em pares | https://www.mentimeter.com/app/home |
 | Microsoft Teams | Interação, comunicação persistente e colaboração | Publicações, arquivos e versões | Mural físico e pasta compartilhada | https://learn.microsoft.com/en-us/microsoftteams/navigate-teams |
 | Microsoft Forms | Diagnóstico e regulação da aprendizagem | Padrões de resposta e justificativas | Cartões ou formulário impresso | https://support.microsoft.com/en-us/forms/create-a-new-form-or-quiz |
 | PowerPoint Live | Aporte dialogado e visualização acessível | Decisões e aplicações durante a exposição | Projeção local e material acessível | https://support.microsoft.com/en-us/powerpoint/present-from-powerpoint-live-in-microsoft-teams |
@@ -13,6 +14,9 @@ Links oficiais verificados em 15 de setembro de 2026.
 
 ## Condições de uso
 
+- Conferir o código atual e testar QR ou link antes da sessão; o código numérico pode se renovar após inatividade.
+- Informar se as respostas serão anônimas, nomeadas ou verificadas; projetar texto livre somente após avaliar o risco.
+- Não tratar participação, frequência de termos ou percepção como prova automática de aprendizagem.
 - Validar licença, política e permissão no tenant do TJRS.
 - Testar com conta de formador e conta de participante.
 - Não usar dados reais restritos nos laboratórios.
