@@ -22,7 +22,7 @@ Validação inicial concluída em 15 de setembro de 2026 e repetida após a revi
 
 - portal em 1920 × 1080, sem rolagem horizontal;
 - página do Dia 1 em 1366 × 768, sem conteúdo cortado;
-- apresentação Reveal.js com 38 slides, progresso, numeração e notas;
+- apresentação Reveal.js com 39 slides, progresso, numeração e notas;
 - navegação por controles e teclado, incluindo avanço de slide;
 - preservação dos links diretos por hash;
 - temporizador iniciado e reiniciado corretamente;
