@@ -67,6 +67,7 @@ A versão inicial foi publicada por autorização de Anderson em 15 de setembro 
 - branch e origem do Pages: `main` e raiz `/`;
 - commit da implementação inicial: `9933b91`;
 - commit da revisão do Dia 1: `6b1b73d`;
+- commit da remoção dos antigos slides 5 a 9: `08d3b84`;
 - portal: `https://andersonjonio-inova.github.io/fofo-tech-dia-1/`;
 - página do Dia 1: `https://andersonjonio-inova.github.io/fofo-tech-dia-1/dia-1/`;
 - apresentação: `https://andersonjonio-inova.github.io/fofo-tech-dia-1/encontro-1/`.
