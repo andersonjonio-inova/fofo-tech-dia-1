@@ -14,6 +14,14 @@ Portal FOFO TECH /
 │   │   ├── Materiais #materiais
 │   │   ├── Transferência #transferencia
 │   │   └── Apresentação /encontro-1/
+│   ├── Dia 2 /dia-2/
+│   │   ├── Arquitetura #arquitetura
+│   │   ├── Sequência #sequencia
+│   │   ├── Laboratórios #laboratorios
+│   │   ├── Avaliação #avaliacao
+│   │   ├── Desafio #desafio
+│   │   ├── Transferência #transferencia
+│   │   └── Apresentação /encontro-2/
 │   └── Próximos dias: em preparação
 ├── Recursos #recursos
 └── Orientações #orientacoes
