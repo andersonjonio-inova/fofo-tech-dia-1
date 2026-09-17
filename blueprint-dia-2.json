@@ -1,21 +1,22 @@
 {
-  "title": "FOFO TECH · Dia 2 · Microsoft 365 com intencionalidade pedagógica",
+  "title": "Guia FOFO de uso pedagógico do Microsoft 365",
+  "subtitle": "Forms, Whiteboard, Loop, Teams e SharePoint na elaboração de cursos",
   "aspectRatio": "16:9",
-  "slideCount": 45,
+  "slideCount": 78,
   "layoutSource": "Dia 1",
+  "structureSource": "Guia FOFO de uso pedagógico do Microsoft 365.docx",
+  "sourceSha256": "277ccca2f425076346e653a2b5737865c6ba4f7126c371b49a962780c6e1036f",
   "interaction": ["menu por tópicos", "navegação por teclado", "notas do apresentador", "tela cheia", "temporizador configurável", "hash por número do slide"],
   "topics": [
-    {"id": 0, "name": "Abertura", "slides": [1, 5]},
-    {"id": 1, "name": "Problematização e arquitetura", "slides": [6, 10]},
-    {"id": 2, "name": "Teams", "slides": [11, 14]},
-    {"id": 3, "name": "Forms", "slides": [15, 18]},
-    {"id": 4, "name": "Whiteboard", "slides": [19, 21]},
-    {"id": 5, "name": "Loop", "slides": [22, 25]},
-    {"id": 6, "name": "SharePoint", "slides": [26, 28]},
-    {"id": 7, "name": "Integração, avaliação e governança", "slides": [29, 35]},
-    {"id": 8, "name": "Desafio integrador", "slides": [36, 42]},
-    {"id": 9, "name": "Síntese e transferência", "slides": [43, 45]}
+    {"id": 0, "name": "1. Apresentação e 2. Integração", "slides": [1, 6]},
+    {"id": 1, "name": "3. Microsoft Teams", "slides": [7, 16]},
+    {"id": 2, "name": "4. Microsoft Forms", "slides": [17, 28]},
+    {"id": 3, "name": "5. Microsoft Whiteboard", "slides": [29, 39]},
+    {"id": 4, "name": "6. Microsoft Loop", "slides": [40, 51]},
+    {"id": 5, "name": "7. Microsoft SharePoint", "slides": [52, 64]},
+    {"id": 6, "name": "8. Exemplo de sequência integrada FOFO", "slides": [65, 69]},
+    {"id": 7, "name": "9. Avaliação integrada", "slides": [70, 72]},
+    {"id": 8, "name": "10. Checklist final", "slides": [73, 78]}
   ],
-  "source": "Guia FOFO de uso pedagógico do Microsoft 365.docx",
-  "products": ["mapa de rupturas", "cinco protótipos de laboratório", "plano de curso", "plano de transferência"]
+  "editorialRule": "Preservar capítulos, subtítulos, ordem, modelos, critérios e cuidados do documento; subdividir apenas para legibilidade em projeção."
 }

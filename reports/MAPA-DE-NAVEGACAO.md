@@ -15,12 +15,11 @@ Portal FOFO TECH /
 │   │   ├── Transferência #transferencia
 │   │   └── Apresentação /encontro-1/
 │   ├── Dia 2 /dia-2/
-│   │   ├── Arquitetura #arquitetura
-│   │   ├── Sequência #sequencia
-│   │   ├── Laboratórios #laboratorios
+│   │   ├── Integração #arquitetura
+│   │   ├── Capítulos #capitulos
+│   │   ├── Sequência FOFO #sequencia
 │   │   ├── Avaliação #avaliacao
-│   │   ├── Desafio #desafio
-│   │   ├── Transferência #transferencia
+│   │   ├── Checklist #transferencia
 │   │   └── Apresentação /encontro-2/
 │   └── Próximos dias: em preparação
 ├── Recursos #recursos

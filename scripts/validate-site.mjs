@@ -85,20 +85,20 @@ check('Fechamento por Esc', !(await evaluate(`document.querySelector('.lightbox'
 
 await viewport(1366, 768);
 await navigate('/dia-2/');
-state = await evaluate(`({title:document.title,overflow:document.documentElement.scrollWidth<=innerWidth+1,activities:document.querySelectorAll('.activity-card').length,diagram:!!document.querySelector('.media-zoom'),links:[...document.links].filter(a=>a.href).length})`);
-check('Dia 2 desktop', state.title.includes('Dia 2') && state.overflow && state.activities === 5 && state.diagram && state.links > 10, JSON.stringify(state));
+state = await evaluate(`({title:document.title,overflow:document.documentElement.scrollWidth<=innerWidth+1,chapters:document.querySelectorAll('#capitulos .outcome-card').length,diagram:!!document.querySelector('.media-zoom'),links:[...document.links].filter(a=>a.href).length})`);
+check('Dia 2 desktop', state.title.includes('Dia 2') && state.overflow && state.chapters === 10 && state.diagram && state.links > 10, JSON.stringify(state));
 await screenshot('13-dia-2-1366x768.png');
 
 await viewport(1920, 1080);
 await navigate('/encontro-2/');
 await evaluate(`new Promise(resolve=>{if(window.Reveal?.isReady())return resolve(true); Reveal?.on('ready',()=>resolve(true)); setTimeout(()=>resolve(false),5000)})`);
 state = await evaluate(`({ready:Reveal.isReady(),total:Reveal.getTotalSlides(),progress:!!document.querySelector('.reveal .progress'),number:!!document.querySelector('.slide-number'),notes:!!Reveal.getPlugin('notes'),toolbar:(()=>{const r=document.querySelector('.facilitator-tools').getBoundingClientRect();return {within:r.left>=0&&r.right<=innerWidth}})()})`);
-check('Dia 2: Reveal.js e 45 slides', state.ready && state.total === 45 && state.progress && state.number && state.notes && state.toolbar.within, JSON.stringify(state));
+check('Dia 2: Reveal.js e 78 slides', state.ready && state.total === 78 && state.progress && state.number && state.notes && state.toolbar.within, JSON.stringify(state));
 const slideOverflowDay2 = await evaluate(`(async()=>{const bad=[];for(let i=0;i<Reveal.getTotalSlides();i++){Reveal.slide(i);await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));const s=Reveal.getCurrentSlide(),box=s.getBoundingClientRect();const visible=[...s.children].filter(el=>!el.matches('aside.notes')).some(el=>{const r=el.getBoundingClientRect();return r.bottom>box.bottom+1||r.right>box.right+1||r.top<box.top-1||r.left<box.left-1});if(visible)bad.push(s.dataset.title)}Reveal.slide(0);return bad})()`);
 check('Dia 2: slides sem conteúdo cortado', slideOverflowDay2.length === 0, JSON.stringify({ bad: slideOverflowDay2 }));
-await evaluate(`Reveal.slide(7)`); await wait(600); await screenshot('14-dia-2-arquitetura.png');
-await evaluate(`Reveal.slide(20)`); await wait(600); await screenshot('15-dia-2-laboratorio-whiteboard.png');
-await evaluate(`Reveal.slide(39)`); await wait(600); await screenshot('16-dia-2-rubrica.png');
+await evaluate(`Reveal.slide(4)`); await wait(600); await screenshot('14-dia-2-integracao.png');
+await evaluate(`Reveal.slide(35)`); await wait(600); await screenshot('15-dia-2-modelo-whiteboard.png');
+await evaluate(`Reveal.slide(72)`); await wait(600); await screenshot('16-dia-2-checklist.png');
 await evaluate(`Reveal.slide(0)`);
 
 await viewport(1366, 768);
