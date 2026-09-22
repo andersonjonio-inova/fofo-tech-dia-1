@@ -1,18 +1,34 @@
-# Matriz metodológica do Dia 1
+# Matriz metodológica · FOFO TECH · Dia 1
 
-| Elemento | Definição |
-|---|---|
-| Realidade profissional | Formadores precisam escolher e configurar tecnologias sem reduzir a formação a treinamento de software. |
-| Capacidade | Analisar recursos, justificar escolhas e desenhar experiências alinhadas à aprendizagem e ao contexto. |
-| Objetivos | Analisar transformações da aprendizagem; operar fluxos essenciais; prototipar e revisar uma microatividade. |
-| Conteúdos | Fundamentos Enfam, aprendizagem mediada por tecnologias, conectivismo como lente complementar, Mentimeter, metodologias ativas, mediação, critérios de escolha e recursos do Teams. |
-| Experiência | Diagnóstico a partir de episódio real do trabalho, problematização no Mentimeter, teorização orientada, laboratórios progressivos e desafio integrador. |
-| Produto ou evidência | Reconstrução de experiência, padrões e divergências no Mentimeter, respostas justificadas, sínteses, roteiros, questão diagnóstica, mapa, canvas e protótipo revisado. |
-| Critérios | Alinhamento, ação relevante, evidência, feedback, mediação, governança, acessibilidade e contingência. |
-| Feedback e revisão | Instrução por pares, checklist, protocolo entre equipes, rubrica e nova versão obrigatória. |
-| Avaliação | Diagnóstica no início e formativa durante produções, prototipagem e ticket de saída. |
-| Transferência | Decisão de aplicação em situação real com condições, responsável, prazo e alternativa simples. |
+## Finalidade
 
-## Microciclo dos laboratórios
+Material instrucional e dialogado para estudo, retomada e transferência. O percurso recupera a experiência real do Dia 1: diagnóstico e problematização com Mentimeter; visão panorâmica do Gemini Notebook; aprofundamento no ciclo Fontes, Prompts e Artefatos.
 
-Problema → hipóteses → demonstração curta → prática guiada → desafio → evidência → feedback → revisão → debriefing → transferência.
+## Cadeia de aprendizagem
+
+Realidade e repertório → pergunta diagnóstica → leitura da evidência → problematização → fundamentação → prática guiada → verificação → revisão → transferência.
+
+## Blocos
+
+| Bloco | Slides | Ação do participante | Evidência | Mediação |
+|---|---:|---|---|---|
+| Abertura | 1–5 | Estabelecer contrato de leitura e aprendizagem | Expectativas e formas de participação | Acolher e situar o material como conversa |
+| Diagnóstico | 6–9 | Explicitar como aprende no trabalho e interpretar o ponto de partida | Repertórios, padrões, ausências e diferenças | Transformar respostas em decisão pedagógica |
+| Mentimeter | 10–20 | Responder, justificar, comparar e analisar tipos de questão | Escolhas, justificativas, prioridades e percepções | Conduzir debriefing e distinguir participação de aprendizagem |
+| Transição | 21–24 | Relacionar escuta do grupo e investigação de fontes | Definição e limites do Gemini Notebook | Delimitar IA ancorada em fontes e julgamento humano |
+| Fontes | 25–31 | Pesquisar, selecionar, curar e auditar o corpus | Corpus com função, limite e autorização registrados | Questionar autoridade, atualidade, diversidade e proteção |
+| Prompts | 32–38 | Formular, melhorar e verificar perguntas ao corpus | Prompts contextualizados e citações conferidas | Modelar investigação progressiva e desacelerar a aceitação |
+| Artefatos | 39–46 | Selecionar, configurar e auditar produtos | Artefato revisado para uma ação de aprendizagem | Relacionar formato, função, acessibilidade e autoria |
+| Integração | 47–50 | Desenhar e revisar um ciclo completo | Fontes → Prompts → Artefatos com critérios e limite | Oferecer feedback e exigir nova versão |
+| Síntese | 51–54 | Recuperar, explicar e transferir | Mudança de critério e aplicação declarada | Sistematizar e preparar continuidade |
+
+## Critérios de qualidade
+
+1. A pergunta antecede a ferramenta.
+2. A evidência informa uma decisão real.
+3. O diagnóstico não é tratado como prova de aprendizagem.
+4. O corpus é curado antes do prompt.
+5. Citações são abertas e conferidas.
+6. Artefatos são tratados como rascunhos auditáveis.
+7. Acessibilidade, privacidade, autoria e contingência integram o desenho.
+8. Toda prática termina com revisão e possibilidade de transferência.

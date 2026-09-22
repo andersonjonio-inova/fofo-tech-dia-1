@@ -1,70 +1,355 @@
 {
   "Global_Settings": {
     "Aspect_Ratio": "16:9",
-    "Design_Style": ["sofisticado", "institucional", "tech", "minimalista", "projetor"],
-    "Color_Scheme": {
-      "Primary": "#17488F",
-      "Deep_Blue": "#0E2F66",
-      "Technology_Accent": "#12A7C7",
-      "Secondary_Green": "#76B82A",
-      "Secondary_Orange": "#F39A24",
-      "Highlight_Yellow": "#FFD21D",
-      "Background": "#FFFFFF",
-      "Text": "#15243A"
-    },
-    "Typography": {
-      "Family": "Aptos, Segoe UI Variable Display, Segoe UI, Arial, sans-serif",
-      "Title": "42–100 px responsivos",
-      "Body": "16–29 px responsivos",
-      "Projection_Rule": "alto contraste, pouco texto por bloco e leitura a distância"
-    },
-    "Interaction": ["menu lateral gerado por data-topic", "setas e teclado", "gesto horizontal no celular", "tela cheia", "notas do apresentador", "temporizador configurável", "temporizador destacável", "hash #N por número do slide"],
-    "Accessibility": ["foco visível", "rótulos ARIA", "movimento reduzido", "rolagem móvel", "contraste sem dependência exclusiva de cor"]
+    "Purpose": "material instrucional, dialogado e de retomada",
+    "Design_Style": [
+      "institucional",
+      "tech",
+      "dialogado",
+      "legível em projeção",
+      "estudável sem a fala do formador"
+    ],
+    "Interaction": [
+      "menu por tópico",
+      "setas e teclado",
+      "gesto horizontal",
+      "tela cheia",
+      "notas do apresentador",
+      "temporizador",
+      "hash por slide"
+    ],
+    "Accessibility": [
+      "foco visível",
+      "rótulos ARIA",
+      "movimento reduzido",
+      "alto contraste",
+      "alternativas e contingências"
+    ]
   },
   "Slides": [
-    {"Page":"01","Type":"Cover","Topic":"Abertura","Title":"FOFO TECH: Aprendizagem mediada por tecnologias"},
-    {"Page":"02","Type":"Instructor","Topic":"Abertura","Title":"Fernando de Assis Alves"},
-    {"Page":"03","Type":"Instructor","Topic":"Abertura","Title":"Ânderson Porto"},
-    {"Page":"04","Type":"Body","Topic":"Abertura","Title":"Nosso pacto de aprendizagem"},
-    {"Page":"05","Type":"Activity","Topic":"Diagnóstico","Title":"Momento de se apresentar"},
-    {"Page":"06","Type":"FullImage","Topic":"Diagnóstico","Title":"Diagnóstico: como aprendemos no trabalho?"},
-    {"Page":"07","Type":"FullImage","Topic":"Problematização","Title":"Problematização no Mentimeter"},
-    {"Page":"08","Type":"Activity","Topic":"Problematização","Title":"Problematização: o que mudou?"},
-    {"Page":"09","Type":"Statement","Topic":"Problematização","Title":"Tecnologia modifica a aprendizagem"},
-    {"Page":"10","Type":"Grid","Topic":"Problematização","Title":"O que se transforma"},
-    {"Page":"11","Type":"Table","Topic":"Problematização","Title":"Potência e risco"},
-    {"Page":"12","Type":"Grid","Topic":"Teorização","Title":"Fundamentos Enfam"},
-    {"Page":"13","Type":"Process","Topic":"Teorização","Title":"Movimento da aprendizagem"},
-    {"Page":"14","Type":"Process","Topic":"Teorização","Title":"Aprendizagem mediada"},
-    {"Page":"15","Type":"Grid","Topic":"Teorização","Title":"Conectivismo como lente complementar"},
-    {"Page":"16","Type":"Table","Topic":"Teorização","Title":"Síntese teórica"},
-    {"Page":"17","Type":"Process","Topic":"Mentimeter","Title":"Mentimeter: como funciona"},
-    {"Page":"18","Type":"Grid","Topic":"Mentimeter","Title":"Mentimeter: aplicações"},
-    {"Page":"19","Type":"Table","Topic":"Mentimeter","Title":"Mentimeter: evidência e limites"},
-    {"Page":"20","Type":"Checklist","Topic":"Mentimeter","Title":"Mentimeter: operação segura"},
-    {"Page":"21","Type":"Statement","Topic":"Intencionalidade","Title":"Nunca a ferramenta pela ferramenta"},
-    {"Page":"22","Type":"Process","Topic":"Intencionalidade","Title":"Sequência de decisão"},
-    {"Page":"23","Type":"Grid","Topic":"Intencionalidade","Title":"Critérios de escolha"},
-    {"Page":"24","Type":"Process","Topic":"Laboratórios Teams","Title":"Microciclo dos laboratórios"},
-    {"Page":"25","Type":"Body","Topic":"Laboratórios Teams","Title":"Teams no laboratório presencial"},
-    {"Page":"26","Type":"ActivityLab","Topic":"Laboratórios Teams","Title":"Laboratório 1: equipes e canais"},
-    {"Page":"27","Type":"ActivityLab","Topic":"Laboratórios Teams","Title":"Laboratório 2: reuniões e PowerPoint Live"},
-    {"Page":"28","Type":"ActivityLab","Topic":"Laboratórios Teams","Title":"Laboratório 3: salas simultâneas"},
-    {"Page":"29","Type":"ActivityLab","Topic":"Laboratórios Teams","Title":"Laboratório 4: Forms e enquetes"},
-    {"Page":"30","Type":"ActivityLab","Topic":"Laboratórios Teams","Title":"Laboratório 5: Whiteboard"},
-    {"Page":"31","Type":"ActivityLab","Topic":"Laboratórios Teams","Title":"Laboratório 6: Loop"},
-    {"Page":"32","Type":"Grid","Topic":"Laboratórios Teams","Title":"NotebookLM: conceito"},
-    {"Page":"33","Type":"Process","Topic":"Laboratórios Teams","Title":"NotebookLM: arquitetura"},
-    {"Page":"34","Type":"Grid","Topic":"Laboratórios Teams","Title":"NotebookLM: funcionalidades"},
-    {"Page":"35","Type":"Process","Topic":"Laboratórios Teams","Title":"NotebookLM: fluxo verificável"},
-    {"Page":"36","Type":"ActivityLab","Topic":"Laboratórios Teams","Title":"Laboratório 7: NotebookLM"},
-    {"Page":"37","Type":"Checklist","Topic":"Laboratórios Teams","Title":"Governança e contingência"},
-    {"Page":"38","Type":"Activity","Topic":"Desafio integrador","Title":"Desafio integrador"},
-    {"Page":"39","Type":"Grid","Topic":"Desafio integrador","Title":"Canvas da microatividade"},
-    {"Page":"40","Type":"Table","Topic":"Desafio integrador","Title":"Rubrica de qualidade"},
-    {"Page":"41","Type":"Activity","Topic":"Desafio integrador","Title":"Feedback entre pares"},
-    {"Page":"42","Type":"Process","Topic":"Síntese","Title":"Síntese do percurso"},
-    {"Page":"43","Type":"Activity","Topic":"Síntese","Title":"Ticket de saída"},
-    {"Page":"44","Type":"BackCover","Topic":"Síntese","Title":"Fechamento"}
+    {
+      "Page": "01",
+      "Type": "Cover",
+      "Topic": "Abertura",
+      "Title": "Capa"
+    },
+    {
+      "Page": "02",
+      "Type": "Dialogue",
+      "Topic": "Abertura",
+      "Title": "Fernando de Assis Alves"
+    },
+    {
+      "Page": "03",
+      "Type": "Dialogue",
+      "Topic": "Abertura",
+      "Title": "Ânderson Porto"
+    },
+    {
+      "Page": "04",
+      "Type": "Dialogue",
+      "Topic": "Abertura",
+      "Title": "Como usar este material"
+    },
+    {
+      "Page": "05",
+      "Type": "Dialogue",
+      "Topic": "Abertura",
+      "Title": "Nosso pacto de aprendizagem"
+    },
+    {
+      "Page": "06",
+      "Type": "Activity",
+      "Topic": "Diagnóstico",
+      "Title": "Momento de se apresentar"
+    },
+    {
+      "Page": "07",
+      "Type": "FullImage",
+      "Topic": "Diagnóstico",
+      "Title": "Diagnóstico: como aprendemos no trabalho?"
+    },
+    {
+      "Page": "08",
+      "Type": "Dialogue",
+      "Topic": "Diagnóstico",
+      "Title": "O diagnóstico é uma escuta"
+    },
+    {
+      "Page": "09",
+      "Type": "Dialogue",
+      "Topic": "Diagnóstico",
+      "Title": "Diagnóstico só ganha sentido quando muda uma decisão"
+    },
+    {
+      "Page": "10",
+      "Type": "FullImage",
+      "Topic": "Mentimeter",
+      "Title": "Problematização no Mentimeter"
+    },
+    {
+      "Page": "11",
+      "Type": "Dialogue",
+      "Topic": "Mentimeter",
+      "Title": "A tecnologia modificou o quê?"
+    },
+    {
+      "Page": "12",
+      "Type": "Dialogue",
+      "Topic": "Mentimeter",
+      "Title": "Mentimeter não é metodologia"
+    },
+    {
+      "Page": "13",
+      "Type": "Dialogue",
+      "Topic": "Mentimeter",
+      "Title": "Comece pela evidência"
+    },
+    {
+      "Page": "14",
+      "Type": "Dialogue",
+      "Topic": "Mentimeter",
+      "Title": "Múltipla escolha"
+    },
+    {
+      "Page": "15",
+      "Type": "Dialogue",
+      "Topic": "Mentimeter",
+      "Title": "Nuvem de palavras"
+    },
+    {
+      "Page": "16",
+      "Type": "Dialogue",
+      "Topic": "Mentimeter",
+      "Title": "Resposta aberta"
+    },
+    {
+      "Page": "17",
+      "Type": "Dialogue",
+      "Topic": "Mentimeter",
+      "Title": "Escala, ranking e priorização"
+    },
+    {
+      "Page": "18",
+      "Type": "Dialogue",
+      "Topic": "Mentimeter",
+      "Title": "O resultado não fala sozinho"
+    },
+    {
+      "Page": "19",
+      "Type": "Dialogue",
+      "Topic": "Mentimeter",
+      "Title": "Debriefing: a aprendizagem acontece depois do clique"
+    },
+    {
+      "Page": "20",
+      "Type": "Dialogue",
+      "Topic": "Mentimeter",
+      "Title": "Operação segura do Mentimeter"
+    },
+    {
+      "Page": "21",
+      "Type": "Dialogue",
+      "Topic": "Transição",
+      "Title": "Da voz do grupo às fontes"
+    },
+    {
+      "Page": "22",
+      "Type": "Dialogue",
+      "Topic": "Transição",
+      "Title": "O que é o Gemini Notebook?"
+    },
+    {
+      "Page": "23",
+      "Type": "Dialogue",
+      "Topic": "Transição",
+      "Title": "O que ele faz e o que não faz"
+    },
+    {
+      "Page": "24",
+      "Type": "Dialogue",
+      "Topic": "Transição",
+      "Title": "Nosso mapa de uso"
+    },
+    {
+      "Page": "25",
+      "Type": "Dialogue",
+      "Topic": "Fontes",
+      "Title": "Fontes: antes do prompt, vem o corpus"
+    },
+    {
+      "Page": "26",
+      "Type": "Dialogue",
+      "Topic": "Fontes",
+      "Title": "O que pode entrar como fonte?"
+    },
+    {
+      "Page": "27",
+      "Type": "Dialogue",
+      "Topic": "Fontes",
+      "Title": "Como pesquisar fontes"
+    },
+    {
+      "Page": "28",
+      "Type": "Dialogue",
+      "Topic": "Fontes",
+      "Title": "Como curar fontes"
+    },
+    {
+      "Page": "29",
+      "Type": "Dialogue",
+      "Topic": "Fontes",
+      "Title": "Corpus forte ou corpus frágil?"
+    },
+    {
+      "Page": "30",
+      "Type": "Dialogue",
+      "Topic": "Fontes",
+      "Title": "Auditoria rápida das fontes"
+    },
+    {
+      "Page": "31",
+      "Type": "Dialogue",
+      "Topic": "Fontes",
+      "Title": "Fontes também exigem responsabilidade"
+    },
+    {
+      "Page": "32",
+      "Type": "Dialogue",
+      "Topic": "Prompts",
+      "Title": "Prompts: a pergunta organiza a investigação"
+    },
+    {
+      "Page": "33",
+      "Type": "Dialogue",
+      "Topic": "Prompts",
+      "Title": "Anatomia de um prompt útil"
+    },
+    {
+      "Page": "34",
+      "Type": "Dialogue",
+      "Topic": "Prompts",
+      "Title": "Prompt fraco e prompt melhorado"
+    },
+    {
+      "Page": "35",
+      "Type": "Dialogue",
+      "Topic": "Prompts",
+      "Title": "Uma escada de perguntas"
+    },
+    {
+      "Page": "36",
+      "Type": "Dialogue",
+      "Topic": "Prompts",
+      "Title": "Prompts para o trabalho do formador"
+    },
+    {
+      "Page": "37",
+      "Type": "Dialogue",
+      "Topic": "Prompts",
+      "Title": "Citações: volte ao trecho de origem"
+    },
+    {
+      "Page": "38",
+      "Type": "Dialogue",
+      "Topic": "Prompts",
+      "Title": "Quando a resposta parece boa demais"
+    },
+    {
+      "Page": "39",
+      "Type": "Dialogue",
+      "Topic": "Artefatos",
+      "Title": "Artefatos: a resposta ganha forma"
+    },
+    {
+      "Page": "40",
+      "Type": "Dialogue",
+      "Topic": "Artefatos",
+      "Title": "Relatórios e mapas"
+    },
+    {
+      "Page": "41",
+      "Type": "Dialogue",
+      "Topic": "Artefatos",
+      "Title": "Áudio e vídeo"
+    },
+    {
+      "Page": "42",
+      "Type": "Dialogue",
+      "Topic": "Artefatos",
+      "Title": "Quiz e flashcards"
+    },
+    {
+      "Page": "43",
+      "Type": "Dialogue",
+      "Topic": "Artefatos",
+      "Title": "Infográfico e apresentação"
+    },
+    {
+      "Page": "44",
+      "Type": "Dialogue",
+      "Topic": "Artefatos",
+      "Title": "Escolha o artefato pela ação"
+    },
+    {
+      "Page": "45",
+      "Type": "Dialogue",
+      "Topic": "Artefatos",
+      "Title": "Como configurar um artefato"
+    },
+    {
+      "Page": "46",
+      "Type": "Dialogue",
+      "Topic": "Artefatos",
+      "Title": "Auditoria do artefato"
+    },
+    {
+      "Page": "47",
+      "Type": "Dialogue",
+      "Topic": "Integração",
+      "Title": "O ciclo completo"
+    },
+    {
+      "Page": "48",
+      "Type": "Dialogue",
+      "Topic": "Integração",
+      "Title": "Exemplo completo: do problema ao produto"
+    },
+    {
+      "Page": "49",
+      "Type": "Activity",
+      "Topic": "Integração",
+      "Title": "Sua vez: desenhe um pequeno ciclo"
+    },
+    {
+      "Page": "50",
+      "Type": "Dialogue",
+      "Topic": "Integração",
+      "Title": "Um feedback que produz nova versão"
+    },
+    {
+      "Page": "51",
+      "Type": "Dialogue",
+      "Topic": "Síntese",
+      "Title": "Síntese do Dia 1"
+    },
+    {
+      "Page": "52",
+      "Type": "Dialogue",
+      "Topic": "Síntese",
+      "Title": "Cheque sua compreensão"
+    },
+    {
+      "Page": "53",
+      "Type": "Activity",
+      "Topic": "Síntese",
+      "Title": "Ticket de saída"
+    },
+    {
+      "Page": "54",
+      "Type": "BackCover",
+      "Topic": "Síntese",
+      "Title": "Fechamento"
+    }
   ]
 }
