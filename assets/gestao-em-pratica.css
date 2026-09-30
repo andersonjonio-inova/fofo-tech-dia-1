@@ -68,3 +68,13 @@
 .gep-learning-path li>div>span{color:#916014;font:800 11px var(--font-mono);letter-spacing:.05em;text-transform:uppercase}
 @media(max-width:1050px){.gep-learning-path{grid-template-columns:1fr;gap:22px}.gep-learning-path li,.gep-learning-path li:nth-child(5),.gep-learning-path li:nth-child(6),.gep-learning-path li:nth-child(7),.gep-learning-path li:nth-child(8){grid-column:1;grid-row:auto;min-height:0}.gep-learning-path li::after,.gep-learning-path li:nth-child(4)::after,.gep-learning-path li:nth-child(n+5)::after{content:"↓";top:auto;right:50%;bottom:-30px;left:auto;transform:translateX(50%)}.gep-learning-path li:last-child::after{display:none}.gep-learning-path>li>svg{margin-top:39px}}
 @media(max-width:780px){.gep-learning-path li{grid-template-columns:40px 1fr;padding:23px 18px}.gep-learning-path h3{font-size:20px}.gep-learning-path p{font-size:15px}}
+
+/* Aplicação da newsletter: painel escuro destacado dentro da seção clara. */
+.gep-newsletter-application{padding:42px;border:2px solid #1f6171;border-radius:28px;background:radial-gradient(circle at 92% 12%,rgba(81,213,193,.14),transparent 32%),linear-gradient(145deg,#06182a,#0a3448);box-shadow:0 24px 55px rgba(7,35,54,.22)}
+.gep-newsletter-application h3{color:#fff}
+.gep-newsletter-application .gep-feature-copy>p:not(.eyebrow){color:#c7d9e4}
+.gep-newsletter-application .gep-newsletter-button{background:linear-gradient(110deg,#59d9f5,#53d3bf);color:#082337;box-shadow:0 14px 30px rgba(81,213,193,.2)}
+.gep-newsletter-application .gep-newsletter-button:hover,.gep-newsletter-application .gep-newsletter-button:focus-visible{background:#8cebdd;color:#061b2d}
+.gep-newsletter-application .gep-newsletter-steps p{border-color:#31596e;background:rgba(255,255,255,.08);color:#eef8fc;box-shadow:0 10px 24px rgba(0,0,0,.18)}
+.gep-newsletter-application .gep-newsletter-steps span{background:#0d6370;color:#cafff7;box-shadow:inset 0 0 0 1px rgba(132,239,224,.28)}
+@media(max-width:780px){.gep-newsletter-application{padding:28px 20px}}
