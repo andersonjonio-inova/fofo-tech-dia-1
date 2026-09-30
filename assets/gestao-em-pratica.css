@@ -51,3 +51,20 @@
 .gep-leadership-concept blockquote p{color:#e5f2f7;font-size:18px;line-height:1.72}
 .gep-leadership-source{margin-top:25px;padding-top:19px;border-top-color:rgba(126,231,218,.38);color:#bdd3dd;font-size:13px;line-height:1.58}
 @media(max-width:780px){.gep-architecture{min-height:0;padding:24px}.gep-architecture-stage h3{font-size:25px}.gep-architecture-core h3{font-size:27px}.gep-leadership-concept{padding:27px}.gep-leadership-concept h3{font-size:32px}.gep-leadership-concept blockquote p{font-size:17px}}
+
+/* Trilha de aprendizagem: sequência conectada em leitura serpentina no desktop. */
+.gep-learning-path{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px 22px;margin:0;padding:0;list-style:none}
+.gep-learning-path li{position:relative;display:grid;grid-template-columns:46px 1fr;gap:15px;min-height:224px;padding:25px 22px;border:2px solid #bfd3df;border-radius:21px;background:#fff;box-shadow:0 16px 36px rgba(18,48,73,.12)}
+.gep-learning-path li:nth-child(5){grid-column:4;grid-row:2}.gep-learning-path li:nth-child(6){grid-column:3;grid-row:2}.gep-learning-path li:nth-child(7){grid-column:2;grid-row:2}.gep-learning-path li:nth-child(8){grid-column:1;grid-row:2}
+.gep-learning-path li::after{content:"→";position:absolute;z-index:3;top:50%;right:-30px;display:grid;place-items:center;width:36px;height:36px;border:2px solid #d4a14f;border-radius:50%;background:#0b4055;color:#fff;font-size:20px;font-weight:900;line-height:1;transform:translateY(-50%);box-shadow:0 7px 16px rgba(18,48,73,.18)}
+.gep-learning-path li:nth-child(4)::after{content:"↓";top:auto;right:50%;bottom:-32px;transform:translateX(50%)}
+.gep-learning-path li:nth-child(n+5)::after{content:"←";right:auto;left:-30px}
+.gep-learning-path li:last-child::after{display:none}
+.gep-learning-path>li>svg{grid-column:1;width:31px;height:31px;margin-top:42px;color:#087b82;stroke-width:2.2}
+.gep-path-number{position:absolute;top:17px;left:18px;display:grid;place-items:center;width:38px;height:30px;border-radius:9px;background:#0b4055;color:#9df0e4;font:800 12px var(--font-mono);letter-spacing:.04em}
+.gep-learning-path li>div{grid-column:2;align-self:center}
+.gep-learning-path h3{margin:0 0 9px;color:#112f45;font-size:22px;line-height:1.16}
+.gep-learning-path p{margin:0 0 15px;color:#526a7e;font-size:15px;line-height:1.55}
+.gep-learning-path li>div>span{color:#916014;font:800 11px var(--font-mono);letter-spacing:.05em;text-transform:uppercase}
+@media(max-width:1050px){.gep-learning-path{grid-template-columns:1fr;gap:22px}.gep-learning-path li,.gep-learning-path li:nth-child(5),.gep-learning-path li:nth-child(6),.gep-learning-path li:nth-child(7),.gep-learning-path li:nth-child(8){grid-column:1;grid-row:auto;min-height:0}.gep-learning-path li::after,.gep-learning-path li:nth-child(4)::after,.gep-learning-path li:nth-child(n+5)::after{content:"↓";top:auto;right:50%;bottom:-30px;left:auto;transform:translateX(50%)}.gep-learning-path li:last-child::after{display:none}.gep-learning-path>li>svg{margin-top:39px}}
+@media(max-width:780px){.gep-learning-path li{grid-template-columns:40px 1fr;padding:23px 18px}.gep-learning-path h3{font-size:20px}.gep-learning-path p{font-size:15px}}
