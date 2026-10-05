@@ -1,0 +1,19 @@
+{
+  "title": "Gestão na Prática CJF",
+  "route": "/gestao-na-pratica-apresentacao/",
+  "format": "16:9",
+  "mainSlides": 16,
+  "supportSlides": 6,
+  "totalSlides": 22,
+  "decision": "Autorizar o detalhamento do piloto de 90 dias e a definição de sua governança.",
+  "movements": [
+    {"name": "Hook", "slides": [1, 2]},
+    {"name": "Contexto", "slides": [3, 4]},
+    {"name": "Tensão", "slides": [5, 6]},
+    {"name": "Revelação", "slides": [7, 8]},
+    {"name": "Demonstração", "slides": [9, 10]},
+    {"name": "Viabilidade e prova", "slides": [11, 12, 13, 14]},
+    {"name": "Decisão e fechamento", "slides": [15, 16]}
+  ],
+  "support": ["Função de cada componente", "Quatro eixos de competências", "Públicos e ênfases", "Evidências possíveis", "Cadeia de valor do conteúdo", "Riscos e salvaguardas"]
+}
