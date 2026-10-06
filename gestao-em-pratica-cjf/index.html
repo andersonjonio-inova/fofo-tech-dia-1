@@ -11,16 +11,17 @@
   <link rel="stylesheet" href="../assets/gestao-em-pratica.css?v=20261006-1">
   <script src="../vendor/lucide/lucide.min.js" defer></script>
   <script src="../assets/portal.js" defer></script>
+  <script src="../assets/gestao-em-pratica-presentation.js?v=20261006-1" defer></script>
 </head>
 <body class="gep-page">
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
   <header class="gep-header" data-sticky-header>
     <a class="gep-brand" href="#inicio" aria-label="Gestão na Prática CJF, início"><img class="gep-brand-mark" src="../assets/gestao-na-pratica-logo.svg" alt="" width="46" height="46"><span><strong>Gestão na Prática CJF</strong><small>Desenvolvimento de lideranças</small></span></a>
     <button class="gep-nav-toggle nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="gep-nav"><i data-lucide="menu"></i></button>
-    <nav id="gep-nav" class="gep-nav main-nav" aria-label="Navegação principal"><a href="#problema">Problema</a><a href="#insumos">Insumos</a><a href="#fases">Fases</a><a href="#competencias">Competências</a><a href="#piloto">Piloto</a><a href="#avaliacao">Avaliação</a></nav>
+    <nav id="gep-nav" class="gep-nav main-nav" aria-label="Navegação principal"><a href="#problema">Problema</a><a href="#insumos">Insumos</a><a href="#fases">Fases</a><a href="#competencias">Competências</a><a href="#piloto">Piloto</a><a href="#avaliacao">Avaliação</a><button id="startPresentation" class="gep-present-button" type="button"><i data-lucide="presentation"></i>Apresentar</button></nav>
   </header>
   <main id="conteudo">
-    <section id="inicio" class="gep-hero" aria-labelledby="page-title">
+    <section id="inicio" class="gep-hero" aria-labelledby="page-title" data-presentation-slide data-slide-title="Abertura">
       <div class="gep-hero-media" aria-hidden="true"></div><div class="gep-grid-pattern" aria-hidden="true"></div>
       <div class="container gep-hero-content">
         <p class="gep-status"><i data-lucide="construction"></i>Versão de trabalho</p>
@@ -32,9 +33,9 @@
       </div>
     </section>
 
-    <section class="gep-big-idea" aria-labelledby="big-idea-title"><div class="container gep-big-idea-grid"><p class="eyebrow">Ideia central</p><blockquote id="big-idea-title">Um programa <strong>simples, mas não simplório</strong>: começa por problemas reais da gestão, oferece conteúdos e ferramentas proporcionais à necessidade, promove aplicação no trabalho e transforma experiências em conhecimento institucional.</blockquote></div></section>
+    <section class="gep-big-idea" aria-labelledby="big-idea-title" data-presentation-slide data-slide-title="Ideia central"><div class="container gep-big-idea-grid"><p class="eyebrow">Ideia central</p><blockquote id="big-idea-title">Um programa <strong>simples, mas não simplório</strong>: começa por problemas reais da gestão, oferece conteúdos e ferramentas proporcionais à necessidade, promove aplicação no trabalho e transforma experiências em conhecimento institucional.</blockquote></div></section>
 
-    <section id="problema" class="gep-section gep-section-light" aria-labelledby="problema-title"><div class="container">
+    <section id="problema" class="gep-section gep-section-light" aria-labelledby="problema-title" data-presentation-slide data-slide-title="Problema"><div class="container">
       <div class="gep-section-heading"><div><p class="eyebrow">01 · Ponto de partida</p><h2 id="problema-title">O problema que o programa enfrenta</h2></div><p>O desafio não é apenas oferecer conteúdo. É fazer a aprendizagem acompanhar a complexidade do trabalho e produzir prática verificável.</p></div>
       <div class="gep-problem-grid">
         <article><span>01</span><i data-lucide="clock-3"></i><p>Gestores dispõem de pouco tempo para ações extensas de desenvolvimento.</p></article>
@@ -46,9 +47,9 @@
       </div>
     </div></section>
 
-    <section id="objetivo" class="gep-section gep-section-dark" aria-labelledby="objetivo-title"><div class="container gep-objective"><div><p class="eyebrow">02 · Objetivo</p><h2 id="objetivo-title">Desenvolver competências enquanto o trabalho acontece.</h2></div><blockquote>Desenvolver competências gerenciais por meio de experiências breves, progressivas e aplicáveis, conectando <strong>aprendizagem, prática, reflexão e compartilhamento</strong>.</blockquote></div></section>
+    <section id="objetivo" class="gep-section gep-section-dark" aria-labelledby="objetivo-title" data-presentation-slide data-slide-title="Objetivo"><div class="container gep-objective"><div><p class="eyebrow">02 · Objetivo</p><h2 id="objetivo-title">Desenvolver competências enquanto o trabalho acontece.</h2></div><blockquote>Desenvolver competências gerenciais por meio de experiências breves, progressivas e aplicáveis, conectando <strong>aprendizagem, prática, reflexão e compartilhamento</strong>.</blockquote></div></section>
 
-    <section id="insumos" class="gep-section gep-section-light" aria-labelledby="insumos-title"><div class="container">
+    <section id="insumos" class="gep-section gep-section-light" aria-labelledby="insumos-title" data-presentation-slide data-slide-title="Insumos institucionais"><div class="container">
       <div class="gep-section-heading"><div><p class="eyebrow">03 · Insumos institucionais</p><h2 id="insumos-title">O CJF já possui os elementos que orientam o ecossistema.</h2></div><p>A proposta conecta estratégia, diagnóstico, problemas reais, experiências existentes e evidências.</p></div>
       <div class="gep-source-grid">
         <article><i data-lucide="landmark"></i><div><h3>Plano de Gestão do CJF</h3><p>Define prioridades, resultados e competências estratégicas a serem apoiadas.</p></div></article>
@@ -60,7 +61,7 @@
       </div>
     </div></section>
 
-    <section id="adkar" class="gep-section gep-section-accent" aria-labelledby="adkar-title"><div class="container">
+    <section id="adkar" class="gep-section gep-section-accent" aria-labelledby="adkar-title" data-presentation-slide data-slide-title="Da consciência ao reforço"><div class="container">
       <div class="gep-section-heading"><div><p class="eyebrow">04 · Referência de mudança</p><h2 id="adkar-title">Da consciência ao reforço</h2></div><p>O ADKAR organiza o caminho entre compreender uma necessidade e sustentar uma nova prática.</p></div>
       <ol class="gep-adkar" aria-label="Etapas do modelo ADKAR no Gestão na Prática">
         <li><span>A</span><div><h3>Consciência</h3><strong>Por que essa competência importa?</strong><p>Problema real, evidência, caso e relação com a estratégia.</p></div></li>
@@ -71,7 +72,7 @@
       </ol>
     </div></section>
 
-    <section id="fases" class="gep-section gep-section-light" aria-labelledby="fases-title"><div class="container">
+    <section id="fases" class="gep-section gep-section-light" aria-labelledby="fases-title" data-presentation-slide data-slide-title="Arquitetura em duas fases"><div class="container">
       <div class="gep-section-heading"><div><p class="eyebrow">05 · Arquitetura em duas fases</p><h2 id="fases-title">Adotar, aplicar e aprender antes de ampliar.</h2></div><p>A expansão depende do que o piloto comprovar. Personalização e tecnologia entram depois da base institucional.</p></div>
       <div class="gep-phase-grid">
         <article class="gep-phase gep-phase-one"><header><span>Fase 1</span><h3>Adotar, aplicar e aprender</h3><p>Começar com soluções viáveis e produzir evidências de uso no trabalho.</p></header><ul>
@@ -84,7 +85,7 @@
       <div class="gep-phase-gate"><i data-lucide="shield-check"></i><p><strong>Condição para avançar:</strong> conteúdos, taxonomia, governança, segurança, autoria e critérios de qualidade definidos.</p></div>
     </div></section>
 
-    <section id="componentes" class="gep-section gep-section-dark" aria-labelledby="componentes-title"><div class="container">
+    <section id="componentes" class="gep-section gep-section-dark" aria-labelledby="componentes-title" data-presentation-slide data-slide-title="Função dos componentes"><div class="container">
       <div class="gep-section-heading"><div><p class="eyebrow">06 · Função de cada componente</p><h2 id="componentes-title">Cada oferta cumpre uma função pedagógica e produz uma evidência.</h2></div><p>Os formatos são conectados conforme a necessidade e a complexidade da competência.</p></div>
       <div class="gep-component-grid">
         <article><i data-lucide="mail-open"></i><div><h3>Newsletter</h3><p>Introduzir a competência, ativar interesse e propor ação breve.</p><strong>Resposta a caso ou aplicação da semana.</strong></div></article>
@@ -99,7 +100,7 @@
       <div class="gep-newsletter-link"><div><p class="eyebrow">Exemplo já produzido</p><h3>Newsletter sobre delegação</h3><p>Uma amostra da porta de entrada educativa prevista para os ciclos.</p></div><a class="button button-primary" href="../materiais/newsletter-delegacao.pdf" target="_blank" rel="noopener noreferrer" type="application/pdf"><i data-lucide="file-text"></i>Acessar PDF</a></div>
     </div></section>
 
-    <section id="competencias" class="gep-section gep-section-light" aria-labelledby="competencias-title"><div class="container">
+    <section id="competencias" class="gep-section gep-section-light" aria-labelledby="competencias-title" data-presentation-slide data-slide-title="Eixos de competências"><div class="container">
       <div class="gep-section-heading"><div><p class="eyebrow">07 · Eixos de competências</p><h2 id="competencias-title">Quatro dimensões da prática gerencial</h2></div><p>Os eixos conectam desenvolvimento pessoal, gestão de pessoas, entrega de resultados e atuação institucional em rede.</p></div>
       <div class="gep-axis-grid">
         <article><span>01</span><i data-lucide="circle-user-round"></i><h3>Liderando a si</h3><p>Ética, autoconhecimento, priorização, autorregulação, decisão e aprendizagem contínua.</p></article>
@@ -109,7 +110,7 @@
       </div>
     </div></section>
 
-    <section id="publicos" class="gep-section gep-section-accent" aria-labelledby="publicos-title"><div class="container">
+    <section id="publicos" class="gep-section gep-section-accent" aria-labelledby="publicos-title" data-presentation-slide data-slide-title="Públicos e percursos"><div class="container">
       <div class="gep-section-heading"><div><p class="eyebrow">08 · Públicos e percursos</p><h2 id="publicos-title">Ênfases proporcionais à responsabilidade gerencial</h2></div><p>Os percursos partem das demandas de cada papel e podem ser ajustados após diagnóstico.</p></div>
       <div class="gep-audience-list">
         <article><div><span>Gestão tático-operacional</span><h3>Chefes de Seção, Diretores de Divisão e Coordenadores</h3></div><p>Organização do trabalho, pessoas, processos, continuidade, riscos e resultados.</p></article>
@@ -119,7 +120,7 @@
       </div>
     </div></section>
 
-    <section id="piloto" class="gep-section gep-section-dark" aria-labelledby="piloto-title"><div class="container">
+    <section id="piloto" class="gep-section gep-section-dark" aria-labelledby="piloto-title" data-presentation-slide data-slide-title="Piloto de 90 dias"><div class="container">
       <div class="gep-pilot-header"><div><p class="eyebrow">09 · Piloto recomendado</p><h2 id="piloto-title"><span>90</span> dias para testar o ciclo completo</h2></div><p>Poucos temas, avaliação rápida e revisão antes da expansão.</p></div>
       <div class="gep-pilot-grid">
         <article><span>Ciclo 01</span><h3>Delegação e continuidade</h3><p>Plano de delegação, atividade crítica documentada ou substituto preparado.</p></article>
@@ -129,7 +130,7 @@
       <div class="gep-pilot-metrics"><article><span>Indicador central</span><p>Percentual de participantes que aplicaram a ferramenta e apresentaram evidência no prazo definido.</p></article><article><span>Critério de expansão</span><p>Adesão suficiente, evidências de aprendizagem e transferência, riscos controlados e capacidade operacional.</p></article></div>
     </div></section>
 
-    <section id="avaliacao" class="gep-section gep-section-light" aria-labelledby="avaliacao-title"><div class="container">
+    <section id="avaliacao" class="gep-section gep-section-light" aria-labelledby="avaliacao-title" data-presentation-slide data-slide-title="Avaliação"><div class="container">
       <div class="gep-section-heading"><div><p class="eyebrow">10 · Avaliação</p><h2 id="avaliacao-title">A avaliação avança do acesso à reutilização.</h2></div><p>Alcance importa, mas não substitui aprendizagem, transferência, resultado ou memória institucional.</p></div>
       <ol class="gep-evaluation" aria-label="Cinco níveis de avaliação">
         <li><span>01</span><div><h3>Alcance</h3><strong>O público foi alcançado?</strong><p>Entrega, acesso, participação e cobertura por segmento.</p></div></li>
@@ -140,7 +141,7 @@
       </ol>
     </div></section>
 
-    <section id="riscos" class="gep-section gep-section-accent" aria-labelledby="riscos-title"><div class="container">
+    <section id="riscos" class="gep-section gep-section-accent" aria-labelledby="riscos-title" data-presentation-slide data-slide-title="Riscos e salvaguardas"><div class="container">
       <div class="gep-section-heading"><div><p class="eyebrow">11 · Riscos e salvaguardas</p><h2 id="riscos-title">Começar viável também significa começar protegido.</h2></div><p>Os riscos previsíveis orientam decisões de desenho, governança e tecnologia desde o piloto.</p></div>
       <div class="gep-risk-grid">
         <article><div><i data-lucide="triangle-alert"></i><h3>Excesso de conteúdos</h3></div><p>Curadoria, poucos temas simultâneos e comunicação segmentada.</p></article>
@@ -154,8 +155,19 @@
       </div>
     </div></section>
 
-    <section class="gep-closing" aria-labelledby="closing-title"><div class="container"><p class="eyebrow">Síntese</p><h2 id="closing-title">Começar com soluções viáveis. Aplicar. Avaliar. Expandir com evidência.</h2><p>O Gestão na Prática CJF será um ecossistema de desenvolvimento gerencial orientado por competências e integrado ao trabalho. Começará com soluções viáveis de aprendizagem e aplicação e avançará, após avaliação, para personalização, gestão do conhecimento e apoio responsável de inteligência artificial.</p><a class="button button-primary" href="#inicio"><i data-lucide="arrow-up"></i>Voltar ao início</a></div></section>
+    <section class="gep-closing" aria-labelledby="closing-title" data-presentation-slide data-slide-title="Síntese"><div class="container"><p class="eyebrow">Síntese</p><h2 id="closing-title">Começar com soluções viáveis. Aplicar. Avaliar. Expandir com evidência.</h2><p>O Gestão na Prática CJF será um ecossistema de desenvolvimento gerencial orientado por competências e integrado ao trabalho. Começará com soluções viáveis de aprendizagem e aplicação e avançará, após avaliação, para personalização, gestão do conhecimento e apoio responsável de inteligência artificial.</p><a class="button button-primary" href="#inicio"><i data-lucide="arrow-up"></i>Voltar ao início</a></div></section>
   </main>
+  <aside id="presentationControls" class="gep-presentation-controls" aria-label="Controles da apresentação" aria-hidden="true">
+    <div class="gep-presentation-progress" aria-hidden="true"><span id="presentationProgress"></span></div>
+    <div class="gep-presentation-meta" aria-live="polite"><span id="presentationCounter">1 / 14</span><strong id="presentationTitle">Abertura</strong></div>
+    <div class="gep-presentation-actions">
+      <button id="previousSlide" type="button" aria-label="Tela anterior" title="Tela anterior (seta para a esquerda)"><i data-lucide="chevron-left"></i></button>
+      <button id="nextSlide" type="button" aria-label="Próxima tela" title="Próxima tela (seta para a direita)"><i data-lucide="chevron-right"></i></button>
+      <button id="toggleFullscreen" type="button" aria-label="Alternar tela cheia" title="Tela cheia"><i data-lucide="maximize"></i></button>
+      <button id="exitPresentation" type="button" aria-label="Sair da apresentação" title="Sair da apresentação (Esc)"><i data-lucide="x"></i></button>
+    </div>
+    <p class="gep-presentation-help">Use ← →, Page Up, Page Down ou deslize a tela</p>
+  </aside>
   <footer class="gep-footer"><div class="container"><div><strong>Gestão na Prática CJF</strong><p>Versão de trabalho sujeita à validação institucional.</p></div><p>Ecossistema de desenvolvimento de lideranças integrado ao trabalho.</p></div></footer>
 </body>
 </html>

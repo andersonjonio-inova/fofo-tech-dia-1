@@ -90,6 +90,29 @@ await screenshot('01-hero-1920x1080.png');
 await evaluate(`document.querySelector('#fases').scrollIntoView()`); await wait(500); await screenshot('02-fases-1920x1080.png');
 await evaluate(`document.querySelector('#piloto').scrollIntoView()`); await wait(500); await screenshot('03-piloto-1920x1080.png');
 
+await navigate();
+await evaluate(`document.querySelector('#startPresentation').click()`); await wait(700);
+state = await evaluate(`({
+  presenting: document.body.classList.contains('gep-presenting'),
+  slides: document.querySelectorAll('[data-presentation-slide]').length,
+  active: document.querySelector('.is-presentation-active')?.dataset.slideTitle,
+  counter: document.querySelector('#presentationCounter')?.textContent,
+  controls: document.querySelector('#presentationControls')?.getAttribute('aria-hidden'),
+  buttons: ['previousSlide','nextSlide','toggleFullscreen','exitPresentation'].every(id => Boolean(document.getElementById(id)))
+})`);
+check('Modo apresentação inicia com 14 telas e controles', state.presenting && state.slides === 14 && state.active === 'Abertura' && state.controls === 'false' && state.buttons, JSON.stringify(state));
+await evaluate(`document.querySelector('#nextSlide').click()`); await wait(500);
+state = await evaluate(`(() => { const slide = document.querySelector('.is-presentation-active'); const box = slide.getBoundingClientRect(); return { title: slide.dataset.slideTitle, counter: document.querySelector('#presentationCounter').textContent, visible: getComputedStyle(slide).visibility, opacity: getComputedStyle(slide).opacity, box: box.toJSON() }; })()`);
+check('Transição por botão mostra a próxima tela', state.title === 'Ideia central' && state.counter === '2 / 14' && state.visible === 'visible' && Number(state.opacity) > 0 && state.box.left >= -1 && state.box.right <= 1921, JSON.stringify(state));
+await screenshot('04-presentation-1920x1080.png');
+await send('Input.dispatchKeyEvent', { type: 'keyDown', key: 'ArrowRight', code: 'ArrowRight' });
+await send('Input.dispatchKeyEvent', { type: 'keyUp', key: 'ArrowRight', code: 'ArrowRight' });
+await wait(500);
+state = await evaluate(`({ title: document.querySelector('.is-presentation-active')?.dataset.slideTitle, counter: document.querySelector('#presentationCounter')?.textContent })`);
+check('Navegação por teclado', state.title === 'Problema' && state.counter === '3 / 14', JSON.stringify(state));
+await evaluate(`document.querySelector('#exitPresentation').click()`); await wait(500);
+check('Saída restaura a página longa', !(await evaluate(`document.body.classList.contains('gep-presenting')`)), 'modo apresentação encerrado');
+
 await viewport(390, 844, true);
 await navigate();
 await evaluate(`document.querySelector('.gep-nav-toggle').click()`); await wait(150);
@@ -101,7 +124,17 @@ state = await evaluate(`({
 })`);
 check('Menu móvel abre e informa estado', state.menuOpen && state.menuExpanded === 'true', JSON.stringify(state));
 check('Celular sem rolagem horizontal', state.overflow && state.clipped.length === 0, JSON.stringify(state));
-await screenshot('04-mobile-390x844.png');
+await screenshot('05-mobile-390x844.png');
+await navigate();
+await evaluate(`document.querySelector('#startPresentation').click()`); await wait(500);
+await send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: 310, y: 410, radiusX: 2, radiusY: 2, force: 1 }] });
+await send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: 90, y: 412, radiusX: 2, radiusY: 2, force: 1 }] });
+await send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+await wait(500);
+state = await evaluate(`(() => { const controls = document.querySelector('#presentationControls').getBoundingClientRect(); return { title: document.querySelector('.is-presentation-active')?.dataset.slideTitle, counter: document.querySelector('#presentationCounter')?.textContent, controls: controls.toJSON(), overflow: document.documentElement.scrollWidth <= innerWidth + 1 }; })()`);
+check('Apresentação móvel e gesto lateral', state.title === 'Ideia central' && state.counter === '2 / 14' && state.controls.left >= 0 && state.controls.right <= 391 && state.overflow, JSON.stringify(state));
+await screenshot('06-presentation-mobile-390x844.png');
+await evaluate(`document.querySelector('#exitPresentation').click()`); await wait(300);
 
 const uniqueErrors = [...new Set(browserErrors)];
 const report = { generatedAt: new Date().toISOString(), site, route, checks, browserErrors: uniqueErrors, passed: checks.every(item => item.passed) && uniqueErrors.length === 0 };
